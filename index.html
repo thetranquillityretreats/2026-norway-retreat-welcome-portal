@@ -71,7 +71,12 @@
     .fday-name{font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--gold);margin-bottom:0.4rem}.fday-desc{font-size:0.7rem;color:var(--text-muted);line-height:1.4;margin-bottom:0.6rem;min-height:2.1rem}.fday-temps{display:flex;justify-content:center;gap:0.4rem;align-items:baseline}.fday-high{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:var(--green-deep)}.fday-low{font-family:var(--serif);font-size:0.85rem;color:var(--text-muted)}
     .weather-placeholder{color:var(--text-muted);font-size:0.9rem;font-style:italic;padding:1rem 0}.weather-subtitle{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.5rem}.weather-note{font-size:0.9rem;line-height:1.8;margin-bottom:1.5rem}
     .hist-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}@media(max-width:600px){.hist-grid{grid-template-columns:repeat(2,1fr)}}.hist-card{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:var(--radius);box-shadow:var(--card-shadow);padding:1.15rem;text-align:center}.hist-card .hist-val{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--green-deep)}.hist-card .hist-label{font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em}
-    #packing{background:var(--bg-warm)}.pack-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}@media(max-width:640px){.pack-grid{grid-template-columns:1fr}}.pack-card{padding:1.75rem}.pack-card h4{font-size:1.1rem;margin-bottom:0.75rem}.pack-card ul{list-style:none}.pack-card li{font-size:0.88rem;padding:0.35rem 0 0.35rem 1.3rem;position:relative}.pack-card li::before{content:'';position:absolute;left:0;top:0.75rem;width:5px;height:5px;border-radius:50%;background:var(--green-mid)}.pack-note{margin-top:1.75rem;font-size:0.9rem;line-height:1.8;max-width:720px}.pack-note strong{color:var(--text)}
+    #packing{background:var(--bg-warm)}
+    .essentials-callout{background:var(--bg-card);border:1px solid var(--gold-border);border-radius:var(--radius-lg);box-shadow:var(--card-shadow);padding:1.75rem 2rem;margin-bottom:2rem}
+    .essentials-callout h4{font-size:1.1rem;margin-bottom:0.6rem;color:var(--text)}
+    .essentials-callout p{font-size:0.88rem;line-height:1.8;color:var(--text-body)}
+    .essentials-callout strong{color:var(--text)}
+    .pack-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:0}@media(max-width:640px){.pack-grid{grid-template-columns:1fr}}.pack-card{padding:1.75rem}.pack-card h4{font-size:1.1rem;margin-bottom:0.75rem}.pack-card ul{list-style:none}.pack-card li{font-size:0.88rem;padding:0.35rem 0 0.35rem 1.3rem;position:relative}.pack-card li::before{content:'';position:absolute;left:0;top:0.75rem;width:5px;height:5px;border-radius:50%;background:var(--green-mid)}.pack-note{margin-top:1.75rem;font-size:0.9rem;line-height:1.8;max-width:720px}.pack-note strong{color:var(--text)}
     #faq{background:var(--bg)}.faq-list{margin-top:2rem}.faq-item{border-bottom:1px solid rgba(29,84,67,0.08)}.faq-q{width:100%;background:none;border:none;text-align:left;cursor:pointer;padding:1.35rem 2.5rem 1.35rem 0;font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--text);position:relative;line-height:1.4;transition:color var(--transition)}.faq-q:hover{color:var(--green-deep)}.faq-q::after{content:'+';position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:1.5rem;font-weight:300;color:var(--gold);transition:transform 0.3s}.faq-q[aria-expanded="true"]::after{content:'\2212'}.faq-a{max-height:0;overflow:hidden;transition:max-height 0.5s cubic-bezier(0.4,0,0.2,1)}.faq-a-inner{padding:0 0 1.5rem;font-size:0.92rem;line-height:1.85}.faq-a-inner a{color:var(--green-deep);font-weight:500}
     #itinerary{background:var(--bg-warm)}.itin-intro{font-size:0.95rem;margin-bottom:0.75rem}.gallery-track{display:flex;gap:1.5rem;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:1.25rem 0 1.75rem;margin-top:1rem}.gallery-track::-webkit-scrollbar{height:4px}.gallery-track::-webkit-scrollbar-track{background:rgba(29,84,67,0.04);border-radius:2px}.gallery-track::-webkit-scrollbar-thumb{background:var(--green-deep);border-radius:2px}.gallery-card{flex:0 0 350px;scroll-snap-align:start;padding:2rem}.gallery-card-day{font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold);margin-bottom:0.3rem}.gallery-card-title{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--text);margin-bottom:0.3rem}.gallery-card-subtitle{font-size:0.82rem;color:var(--text-muted);font-style:italic;margin-bottom:1.15rem;line-height:1.55}.gallery-card-schedule{list-style:none}.gallery-card-schedule li{display:flex;gap:0.75rem;font-size:0.82rem;padding:0.4rem 0;border-top:1px solid rgba(29,84,67,0.05)}.gallery-card-schedule li:first-child{border-top:none}.sched-time{flex:0 0 auto;font-weight:600;color:var(--green-deep);white-space:nowrap;font-size:0.78rem}.sched-name{color:var(--text-body)}.scroll-hint{text-align:center;margin-top:0.5rem;font-size:0.76rem;color:var(--text-muted);font-style:italic}
     footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;text-align:center}.footer-links{display:flex;justify-content:center;gap:1.75rem;flex-wrap:wrap;margin-bottom:1.5rem}.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;transition:color var(--transition)}.footer-links a:hover{color:var(--gold)}.footer-email{margin-bottom:1.5rem}.footer-email a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.85rem;letter-spacing:0.02em}.footer-email a:hover{color:var(--gold)}.footer-copy{font-size:0.72rem;color:rgba(255,255,255,0.35)}
@@ -90,6 +95,7 @@
       <a href="#itinerary" onclick="closeNav()">Itinerary</a>
     </div>
   </nav>
+
   <section class="hero">
     <div class="section-inner">
       <p class="hero-eyebrow reveal">The Tranquillity Retreats</p>
@@ -103,6 +109,7 @@
       <div class="hero-divider reveal"></div>
     </div>
   </section>
+
   <section id="checklist">
     <div class="section-inner">
       <p class="section-eyebrow reveal">Your Welcome Portal</p>
@@ -116,7 +123,7 @@
             <ul class="step-parts">
               <li><strong>Participant Advisory</strong> &ndash; what to expect during the retreat, including breathwork and ceremony guidance</li>
               <li><strong>Brief History</strong> &ndash; a short background on your health, medical history, emergency contact details, and any food allergies for retreat meals, held in strict confidence by the facilitation team</li>
-              <li><strong>Media Consent</strong> &ndash; photography and video permissions during the retreat. <a href="media-release.html">Read the full Media Consent</a></li>
+              <li><strong>Sharing Your Journey</strong> &ndash; how we capture the spirit of the retreat together, and your preferences around photography and footage</li>
             </ul>
             <a class="step-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSez_0UsT4EHZhnRHDJBqwVzcp4b5tBoAY_F791dWyfUKhZoTg/viewform" target="_blank" rel="noopener">Open Onboarding Form</a>
           </div>
@@ -137,6 +144,7 @@
       </div>
     </div>
   </section>
+
   <section id="dates">
     <div class="section-inner">
       <p class="section-eyebrow reveal">Mark Your Calendar</p>
@@ -148,6 +156,7 @@
       </div>
     </div>
   </section>
+
   <section id="retreat-home">
     <div class="section-inner">
       <p class="section-eyebrow reveal">Your Retreat Home</p>
@@ -169,38 +178,92 @@
       </div>
     </div>
   </section>
+
   <section id="packing">
     <div class="section-inner">
-      <p class="section-eyebrow reveal">Prepare</p><h2 class="section-title reveal">What to Pack</h2>
+      <p class="section-eyebrow reveal">Prepare</p>
+      <h2 class="section-title reveal">What to Pack</h2>
+      <div class="essentials-callout reveal">
+        <h4>Mandatory Essentials</h4>
+        <p>Please do not leave these behind. <strong>A yoga mat is required for sessions</strong> and is not provided by the hotel. <strong>Non-slip footwear</strong> is essential for outdoor and on-site movement. <strong>A warm over layer</strong> and a <strong>thin personal blanket or shawl</strong> are also required &mdash; Norway in October is cooler than expected, and hotels in this region do not provide room blankets for use during sessions.</p>
+      </div>
       <div class="pack-grid">
-        <div class="pack-card glass-card reveal"><h4>Clothing &amp; Layers</h4><ul><li>Warm insulated jacket</li><li>Layering pieces (fleece, thermals)</li><li>Waterproof outer layer or rain jacket</li><li>Hiking boots or sturdy walking shoes</li><li>Hat and gloves (evenings get cold)</li><li>Scarf or neck warmer</li><li>Comfortable casual clothing for evenings</li></ul></div>
-        <div class="pack-card glass-card reveal"><h4>Wellness &amp; Practice</h4><ul><li>Yoga mat (required, not provided)</li><li>Comfortable clothing for sessions</li><li>Journal and pen</li><li>Swimwear (for the on-site spa)</li><li>Any personal meditation items</li><li>Water bottle</li></ul></div>
-        <div class="pack-card glass-card reveal"><h4>Travel Essentials</h4><ul><li>Valid passport</li><li>Travel insurance documentation</li><li>Any prescribed medication</li><li>Power adaptors and chargers (Type C/F plug)</li><li>A good book for the journey</li></ul></div>
-        <div class="pack-card glass-card reveal"><h4>Not Required</h4><ul><li>Towels (provided by the hotel)</li><li>Heavy work equipment (this is your time to unplug)</li></ul></div>
+        <div class="pack-card glass-card reveal"><h4>Clothing &amp; Layers</h4><ul>
+          <li>Warm insulated jacket</li>
+          <li>Layering pieces (fleece, thermals)</li>
+          <li>Waterproof outer layer or rain jacket</li>
+          <li>Hiking boots or sturdy walking shoes</li>
+          <li>Hat and gloves (evenings get cold)</li>
+          <li>Scarf or neck warmer</li>
+          <li>Comfortable casual clothing for evenings</li>
+          <li>Thin personal blanket or shawl (for sessions and meditation)</li>
+        </ul></div>
+        <div class="pack-card glass-card reveal"><h4>Wellness &amp; Practice</h4><ul>
+          <li>Yoga mat (required, not provided)</li>
+          <li>Comfortable clothing for sessions</li>
+          <li>Journal and pen</li>
+          <li>Swimwear (for the on-site spa)</li>
+          <li>Any personal meditation items</li>
+          <li>Water bottle</li>
+        </ul></div>
+        <div class="pack-card glass-card reveal"><h4>Travel Essentials</h4><ul>
+          <li>Valid passport</li>
+          <li>Travel insurance documentation</li>
+          <li>Any prescribed medication</li>
+          <li>Power adaptors and chargers (Type C/F plug)</li>
+          <li>A good book for the journey</li>
+        </ul></div>
+        <div class="pack-card glass-card reveal"><h4>Not Required</h4><ul>
+          <li>Towels (provided by the hotel)</li>
+          <li>Heavy work equipment (this is your time to unplug)</li>
+        </ul></div>
       </div>
       <p class="pack-note reveal"><strong>A note on the weather:</strong> October on the Norwegian coast can be unpredictable. Mornings may feel crisp and clear, only for rain to arrive by afternoon. Dress in layers you can add or remove, and always keep a waterproof layer close at hand.</p>
     </div>
   </section>
+
   <section id="faq">
     <div class="section-inner">
-      <p class="section-eyebrow reveal">Questions</p><h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <p class="section-eyebrow reveal">Questions</p>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
       <div class="faq-list reveal">
+
         <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What is included in the retreat package?</button><div class="faq-a"><div class="faq-a-inner">Your retreat package includes five nights of accommodation at Panorama Hotel &amp; Resort, all vegetarian meals (breakfast, lunch, and dinner), all retreat sessions and workshops, a Norway excursion, gong ceremony, fire ceremony, breathing exercises, sound healing, and your participation certificate. The spa facilities are also available to all hotel guests at no additional cost.</div></div></div>
+
         <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What is NOT included?</button><div class="faq-a"><div class="faq-a-inner">Flights and travel to and from the hotel are not included in the retreat price. You are responsible for booking your own travel to Bergen Airport Flesland. Travel insurance, spa treatments (massages, etc.), and any personal expenses are also not included.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What is the cancellation and refund policy?</button><div class="faq-a"><div class="faq-a-inner">We understand that life can shift unexpectedly. If you need to cancel your place, please notify us in writing as soon as possible at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a>. Cancellations made more than 60 days before the retreat are eligible for a full refund minus the non-refundable &pound;100 deposit. Cancellations made between 30 and 60 days prior will receive a 50% refund. Cancellations made within 30 days of the retreat are non-refundable. We strongly encourage all participants to hold comprehensive travel insurance to cover unforeseen cancellations. In the unlikely event that The Tranquillity needs to cancel or postpone the retreat, all participants will be notified immediately and offered a full refund or the option to transfer to a future date.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Is travel insurance required?</button><div class="faq-a"><div class="faq-a-inner">Travel insurance is the responsibility of each participant and is strongly recommended for all attendees. Please ensure your policy covers international travel, medical expenses, and trip cancellation or curtailment. The Tranquillity cannot be held responsible for any costs arising from travel disruption, medical emergencies, or cancellation due to circumstances outside our control.</div></div></div>
+
         <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What are the dietary arrangements?</button><div class="faq-a"><div class="faq-a-inner">All meals during the retreat are vegetarian, prepared by the hotel&rsquo;s Restaurant Vesterled using fresh, locally sourced ingredients. No alcohol is served during the retreat. If you have specific dietary needs or allergies, please include them in the Brief History section of your onboarding form so we can inform the hotel.</div></div></div>
+
         <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What if my dietary requirements change after I submit the onboarding form?</button><div class="faq-a"><div class="faq-a-inner">If your dietary requirements or food allergies change after submitting your onboarding form, please contact the retreat team directly at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> and we will update your information with the hotel as soon as possible.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What if I have a health condition or am unsure if the retreat is right for me?</button><div class="faq-a"><div class="faq-a-inner">Some of the practices we offer, including breathwork, ceremony, and deep meditative work, can bring about powerful physical and emotional responses. We ask that all participants take personal responsibility for disclosing any relevant health conditions in the Brief History section of the onboarding form. If you are unsure whether any aspect of the retreat is suitable for you, please consult your GP or medical practitioner before attending and reach out to us at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> with any questions. By attending the retreat you confirm that you have taken responsibility for your own health and wellbeing in relation to the practices offered.</div></div></div>
+
         <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Is there a shuttle from the airport?</button><div class="faq-a"><div class="faq-a-inner">The hotel is approximately 44 km (about 40 minutes by car) from Bergen Airport Flesland. Each participant is responsible for arranging their own travel to and from the hotel. Public transport is available but takes approximately 2 hours 30 minutes. Car hire or taxi is recommended for the most comfortable journey.</div></div></div>
+
         <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What is the weather like in October?</button><div class="faq-a"><div class="faq-a-inner">October on the Norwegian west coast is cool, with average temperatures between 6&deg;C and 11&deg;C (43&deg;F to 52&deg;F). Rain is frequent, so waterproof layers are essential. The scenery during this season is stunning, with autumn colours and dramatic coastal light.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Can we see the Northern Lights?</button><div class="faq-a"><div class="faq-a-inner">October sits beautifully within the northern lights season, and we have chosen this timing with that wonder in mind. The aurora borealis is a gift of nature and cannot be guaranteed by anyone. Should she appear, it will be one of the most extraordinary moments of your journey. Should she not, everything else about this retreat will still take your breath away. We recommend downloading an aurora forecast app such as SpaceWeatherLive to track activity during your stay.</div></div></div>
+
         <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Is there Wi-Fi at the hotel?</button><div class="faq-a"><div class="faq-a-inner">Yes, complimentary Wi-Fi is available throughout the hotel and event spaces. That said, we encourage you to embrace this time as an opportunity to disconnect and be fully present in your experience.</div></div></div>
+
         <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Is there a spa?</button><div class="faq-a"><div class="faq-a-inner">Yes. Panorama Hotel has a wellness centre with two outdoor hot tubs, warm water pools, a cold plunge pool, steam bath, sauna, and a floating sauna on the water. All guests have complimentary access to these facilities. Additional spa treatments such as massages are available at an extra cost and can be booked directly with the hotel.</div></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What time does the retreat finish on the final day?</button><div class="faq-a"><div class="faq-a-inner">The final day includes a closing ceremony that is an important part of the retreat experience. We strongly encourage you to book return flights for the evening or the following day to ensure you can be fully present for this meaningful conclusion. Specific timing will be shared closer to the retreat.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What time does the retreat finish on the final day?</button><div class="faq-a"><div class="faq-a-inner">Our closing ceremony and farewell lunch on Day Five concludes at approximately 14:30. We strongly encourage all participants to book return travel for the evening of 9 October or the morning of 10 October, so that you can be fully present for our closing without any travel pressure. Bergen Airport Flesland is approximately 40 minutes by car from the hotel.</div></div></div>
+
         <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Can I arrive early or stay after the retreat?</button><div class="faq-a"><div class="faq-a-inner">If you would like to arrive a day early or extend your stay after the retreat, you are welcome to arrange this directly with the hotel. Additional nights would be at your own expense and subject to availability. You can contact Panorama Hotel &amp; Resort through their <a href="https://panoramahotell.no/en/" target="_blank" rel="noopener">website</a>.</div></div></div>
+
       </div>
     </div>
   </section>
+
   <section id="itinerary">
     <div class="section-inner">
-      <p class="section-eyebrow reveal">The Journey</p><h2 class="section-title reveal">Your Five Days</h2>
+      <p class="section-eyebrow reveal">The Journey</p>
+      <h2 class="section-title reveal">Your Five Days</h2>
       <p class="itin-intro reveal">Each day is intentionally designed as a chapter in your transformation. Scroll through to see the full schedule.</p>
       <div class="gallery-track">
         <div class="gallery-card glass-card"><div class="gallery-card-day">Day One</div><div class="gallery-card-title">Seeds of Intention</div><div class="gallery-card-subtitle">Ease into your journey of transformation</div><ul class="gallery-card-schedule"><li><span class="sched-time">13:30 &ndash; 15:00</span><span class="sched-name">Arrival &amp; Registration</span></li><li><span class="sched-time">15:00 &ndash; 15:30</span><span class="sched-name">Introduction</span></li><li><span class="sched-time">15:30 &ndash; 16:30</span><span class="sched-name">Icebreaker</span></li><li><span class="sched-time">16:30 &ndash; 17:00</span><span class="sched-name">Tea Time</span></li><li><span class="sched-time">17:00 &ndash; 18:00</span><span class="sched-name">The Inner Architect</span></li><li><span class="sched-time">18:30 &ndash; 20:30</span><span class="sched-name">Dinner</span></li><li><span class="sched-time">20:30 &ndash; 21:30</span><span class="sched-name">Grounding Meditation</span></li></ul></div>
@@ -212,11 +275,17 @@
       <p class="scroll-hint">Scroll to explore &rarr;</p>
     </div>
   </section>
+
   <footer>
-    <div class="footer-links"><a href="https://thetranquillity.co.uk/term-and-condition-retreat/" target="_blank" rel="noopener">Terms &amp; Conditions</a><a href="https://thetranquillity.co.uk/participant-advisory-the-tranquillity-retreat/" target="_blank" rel="noopener">Participant Advisory</a><a href="media-release.html">Media Consent</a></div>
+    <div class="footer-links">
+      <a href="https://thetranquillity.co.uk/term-and-condition-retreat/" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+      <a href="https://thetranquillity.co.uk/participant-advisory-the-tranquillity-retreat/" target="_blank" rel="noopener">Participant Advisory</a>
+      <a href="media-release.html">Media Consent</a>
+    </div>
     <div class="footer-email"><a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a></div>
     <div class="footer-copy">&copy; 2026 The Tranquillity Retreats. All rights reserved.</div>
   </footer>
+
   <script>
     function closeNav(){var l=document.getElementById('navLinks');var t=document.getElementById('navToggle');l.classList.remove('open');t.setAttribute('aria-expanded','false');}
     document.getElementById('navToggle').addEventListener('click',function(){var l=document.getElementById('navLinks');var open=l.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false');});
