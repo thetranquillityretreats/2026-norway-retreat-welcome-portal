@@ -52,7 +52,7 @@ section{padding:6rem 2rem;position:relative}
 .hero-meta-item{text-align:center}.hero-meta-item .label{display:block;font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--text-muted);margin-bottom:0.3rem}.hero-meta-item .value{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--text)}
 .hero-divider{width:48px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:3.5rem auto 0}
 .glass-card{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:var(--radius-lg);box-shadow:var(--card-shadow);transition:border-color var(--transition),box-shadow var(--transition),transform var(--transition)}.glass-card:hover{border-color:var(--glass-border-hover);box-shadow:var(--card-shadow-hover);transform:translateY(-2px)}
-#checklist{background:var(--bg)}.steps-grid{display:grid;gap:1.75rem;grid-template-columns:1fr 1fr;margin-top:2rem}@media(max-width:700px){.steps-grid{grid-template-columns:1fr}}
+#checklist{background:var(--bg)}.steps-grid{display:grid;gap:1.75rem;grid-template-columns:repeat(3,1fr);margin-top:2rem}@media(max-width:900px){.steps-grid{grid-template-columns:1fr}}
 .step-card{padding:2.25rem}.step-number{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--green-deep),var(--green-mid));color:#fff;font-family:var(--serif);font-size:1.15rem;font-weight:700;margin-bottom:1.25rem;box-shadow:0 4px 14px rgba(29,84,67,0.2)}
 .step-content h3{font-size:1.4rem;margin-bottom:0.75rem}.step-content p{font-size:0.92rem;margin-bottom:1.25rem}
 .step-parts{list-style:none;margin-bottom:1.5rem}.step-parts li{font-size:0.88rem;color:var(--text-body);padding:0.45rem 0 0.45rem 1.5rem;position:relative}.step-parts li::before{content:'';position:absolute;left:0;top:0.85rem;width:8px;height:8px;border-radius:50%;background:var(--green-soft);border:2px solid var(--green-bright)}.step-parts li strong{color:var(--text)}.step-parts li a{font-weight:500}
@@ -113,23 +113,41 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 <section id="checklist">
 <div class="section-inner">
 <p class="section-eyebrow reveal">Your Welcome Portal</p>
-<h2 class="section-title reveal">Two Steps to Get Ready</h2>
+<h2 class="section-title reveal">Three Steps to Get Ready</h2>
 <div class="steps-grid">
+
 <div class="step-card glass-card reveal">
 <div class="step-number">1</div>
 <div class="step-content">
-<h3>Complete the Onboarding Form</h3>
-<p>This single form covers three essential areas. Please read each section carefully and sign where indicated.</p>
+<h3>Sign the User Agreement</h3>
+<p>Before anything else, please read and sign your User Agreement. This covers everything you need to understand about the nature of this retreat and your participation in it.</p>
 <ul class="step-parts">
-<li><strong>Participant Advisory</strong> &ndash; what to expect during the retreat, including breathwork and ceremony guidance</li>
-<li><strong>Brief History</strong> &ndash; a short background on your health, medical history, emergency contact details, and any food allergies for retreat meals, held in strict confidence by the facilitation team</li>
-<li><strong>Sharing Your Journey</strong> &ndash; how we capture the spirit of the retreat together, and your preferences around photography and footage</li>
+<li><strong>Participant Advisory</strong> &ndash; the nature of this work, what to expect, and your rights during the retreat</li>
+<li><strong>Sharing Your Journey</strong> &ndash; how we document the retreat and your preferences around photography and footage</li>
+<li><strong>Our Shared Agreement</strong> &ndash; the principles and commitments that hold this space for everyone</li>
 </ul>
-<a class="step-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSez_0UsT4EHZhnRHDJBqwVzcp4b5tBoAY_F791dWyfUKhZoTg/viewform" target="_blank" rel="noopener">Open Onboarding Form</a>
+<a class="step-cta" href="user-agreement.html" target="_blank" rel="noopener">Read &amp; Sign User Agreement</a>
+<span class="step-note">Before signing, we invite you to read <a href="principles.html">Our Principles</a> &ndash; the culture and code of The Tranquillity community.</span>
 </div>
 </div>
+
 <div class="step-card glass-card reveal">
 <div class="step-number">2</div>
+<div class="step-content">
+<h3>Complete the Health Intake Form</h3>
+<p>Your safety is our deepest priority. This confidential form helps our facilitation team understand your health background so we can support you fully throughout the retreat.</p>
+<ul class="step-parts">
+<li><strong>Brief History</strong> &ndash; your medical background and any conditions relevant to breathwork or intensive practice</li>
+<li><strong>Emergency Contacts</strong> &ndash; who we should reach in the unlikely event it is needed</li>
+<li><strong>Dietary Requirements</strong> &ndash; food allergies and preferences for your retreat meals</li>
+</ul>
+<a class="step-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSez_0UsT4EHZhnRHDJBqwVzcp4b5tBoAY_F791dWyfUKhZoTg/viewform" target="_blank" rel="noopener">Open Health Intake Form</a>
+<span class="step-note">All information is held in strict confidence by the facilitation team and used solely to support your experience.</span>
+</div>
+</div>
+
+<div class="step-card glass-card reveal">
+<div class="step-number">3</div>
 <div class="step-content">
 <h3>Join the WhatsApp Group</h3>
 <p>This is where pre-retreat updates, packing reminders, travel coordination, and community connection happen. Your facilitators will share important updates here in the weeks leading up to the retreat. It is also a wonderful way to connect with fellow participants before you arrive.</p>
@@ -138,9 +156,10 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 <a class="app-store-btn" href="https://apps.apple.com/app/whatsapp-messenger/id310633997" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>App Store</a>
 <a class="app-store-btn" href="https://play.google.com/store/apps/details?id=com.whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24.99.2l.11-.04 11.05-6.37-2.38-2.38-9.77 8.59zm-1.12-20.7C2 3.33 2 3.6 2 3.88v16.24c0 .28 0 .55.06.8l9.84-9.84-9.84-9.82zM20.49 10.7l-2.5-1.44-2.67 2.67 2.67 2.67 2.53-1.46c.72-.41.72-1.42-.03-1.44zM4.17.28L15.22 6.65l-2.38 2.38L3.28.48l.09-.06c.25-.16.53-.2.8-.14z"/></svg>Google Play</a>
 </div>
-<span class="step-note">Your personal WhatsApp invite link will be sent at least 3 months before the retreat, once your onboarding form has been received.</span>
+<span class="step-note">Your personal WhatsApp invite link will be sent at least 3 months before the retreat, once your onboarding is complete.</span>
 </div>
 </div>
+
 </div>
 </div>
 </section>
@@ -233,9 +252,9 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Do I need to arrange my own travel documents?</button><div class="faq-a"><div class="faq-a-inner">Yes. Please ensure your passport is valid and that you meet any visa or entry requirements for your destination. Travel documentation and eligibility sit with each participant, so we recommend checking requirements in advance to support a smooth journey.</div></div></div>
 <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What is the cancellation and refund policy?</button><div class="faq-a"><div class="faq-a-inner">We understand that life can shift unexpectedly. If you need to cancel your place, please notify us in writing as soon as possible at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a>. Cancellations made more than 60 days before the retreat are eligible for a full refund minus the non-refundable &pound;100 deposit. Cancellations made between 30 and 60 days prior will receive a 50% refund. Cancellations made within 30 days of the retreat are non-refundable. We strongly encourage all participants to hold comprehensive travel insurance to cover unforeseen cancellations. In the unlikely event that The Tranquillity needs to cancel or postpone the retreat, all participants will be notified immediately and offered a full refund or the option to transfer to a future date.</div></div></div>
 <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Is travel insurance required?</button><div class="faq-a"><div class="faq-a-inner">Travel insurance is the responsibility of each participant and is strongly recommended for all attendees. Please ensure your policy covers international travel, medical expenses, and trip cancellation or curtailment. The Tranquillity cannot be held responsible for any costs arising from travel disruption, medical emergencies, or cancellation due to circumstances outside our control.</div></div></div>
-<div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What are the dietary arrangements?</button><div class="faq-a"><div class="faq-a-inner">All meals during the retreat are vegetarian, prepared by the hotel&rsquo;s Restaurant Vesterled using fresh, locally sourced ingredients. No alcohol is served during the retreat. If you have specific dietary needs or allergies, please include them in the Brief History section of your onboarding form so we can inform the hotel.</div></div></div>
-<div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What if my dietary requirements change after I submit the onboarding form?</button><div class="faq-a"><div class="faq-a-inner">If your dietary requirements or food allergies change after submitting your onboarding form, please contact the retreat team directly at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> and we will update your information with the hotel as soon as possible.</div></div></div>
-<div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What if I have a health condition or am unsure if the retreat is right for me?</button><div class="faq-a"><div class="faq-a-inner">Some of the practices we offer, including breathwork, ceremony, and deep meditative work, can bring about powerful physical and emotional responses. We ask that all participants take personal responsibility for disclosing any relevant health conditions in the Brief History section of the onboarding form. If you are unsure whether any aspect of the retreat is suitable for you, please consult your GP or medical practitioner before attending and reach out to us at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> with any questions. By attending the retreat you confirm that you have taken responsibility for your own health and wellbeing in relation to the practices offered.</div></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What are the dietary arrangements?</button><div class="faq-a"><div class="faq-a-inner">All meals during the retreat are vegetarian, prepared by the hotel&rsquo;s Restaurant Vesterled using fresh, locally sourced ingredients. No alcohol is served during the retreat. If you have specific dietary needs or allergies, please include them in the Health Intake Form so we can inform the hotel.</div></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What if my dietary requirements change after I submit the Health Intake Form?</button><div class="faq-a"><div class="faq-a-inner">If your dietary requirements or food allergies change after submitting your Health Intake Form, please contact the retreat team directly at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> and we will update your information with the hotel as soon as possible.</div></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What if I have a health condition or am unsure if the retreat is right for me?</button><div class="faq-a"><div class="faq-a-inner">Some of the practices we offer, including breathwork, ceremony, and deep meditative work, can bring about powerful physical and emotional responses. We ask that all participants take personal responsibility for disclosing any relevant health conditions in the Health Intake Form. If you are unsure whether any aspect of the retreat is suitable for you, please consult your GP or medical practitioner before attending and reach out to us at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> with any questions.</div></div></div>
 <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Is there a shuttle from the airport?</button><div class="faq-a"><div class="faq-a-inner">The hotel is approximately 44 km (about 40 minutes by car) from Bergen Airport Flesland. Each participant is responsible for arranging their own travel to and from the hotel. Public transport is available but takes approximately 2 hours 30 minutes. Car hire or taxi is recommended for the most comfortable journey.</div></div></div>
 <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What is the weather like in October?</button><div class="faq-a"><div class="faq-a-inner">October on the Norwegian west coast is cool, with average temperatures between 6&deg;C and 11&deg;C (43&deg;F to 52&deg;F). Rain is frequent, so waterproof layers are essential. The scenery during this season is stunning, with autumn colours and dramatic coastal light.</div></div></div>
 <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Can we see the Northern Lights?</button><div class="faq-a"><div class="faq-a-inner">October sits beautifully within the northern lights season, and we have chosen this timing with that wonder in mind. The aurora borealis is a gift of nature and cannot be guaranteed by anyone. Should she appear, it will be one of the most extraordinary moments of your journey. Should she not, everything else about this retreat will still take your breath away. We recommend downloading an aurora forecast app such as SpaceWeatherLive to track activity during your stay.</div></div></div>
@@ -264,8 +283,8 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 <footer>
 <div class="footer-links">
 <a href="https://thetranquillity.co.uk/term-and-condition-retreat/" target="_blank" rel="noopener">Terms &amp; Conditions</a>
-<a href="https://thetranquillity.co.uk/participant-advisory-the-tranquillity-retreat/" target="_blank" rel="noopener">Participant Advisory</a>
-<a href="media-release.html">Media Consent</a>
+<a href="user-agreement.html">User Agreement</a>
+<a href="principles.html">Our Principles</a>
 </div>
 <div class="footer-email"><a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a></div>
 <div class="footer-copy">&copy; 2026 The Tranquillity Retreats. All rights reserved.</div>
