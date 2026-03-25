@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Tranquillity Principles</title>
+<meta name="description" content="The culture and code of The Tranquillity community.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#faf7f2;--bg-warm:#f3ede4;--bg-card:#ffffff;
+--glass-border:rgba(29,84,67,0.08);
+--text:#1a1a2e;--text-body:#3a3a4e;--text-muted:#6a6a7e;
+--green-deep:#1d5443;--green-mid:#267a5e;
+--gold:#c9a96e;--gold-border:rgba(201,169,110,0.25);
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'Libre Franklin',system-ui,sans-serif;
+--radius:8px;--radius-lg:12px;--max-w:760px;--transition:250ms cubic-bezier(0.4,0,0.2,1)
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--text-body);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;letter-spacing:0.01em}
+h1,h2,h3,h4{font-family:var(--serif);color:var(--text);font-weight:700;line-height:1.2}
+a{color:var(--green-deep);transition:color var(--transition)}a:hover{color:var(--gold)}
+nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);padding:0.85rem 2rem;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:0.03em;transition:color var(--transition)}.nav-brand:hover{color:var(--gold)}
+.nav-links{display:flex;gap:1.75rem;align-items:center}
+.nav-links a{font-size:0.75rem;font-weight:500;color:var(--text-muted);text-decoration:none;text-transform:uppercase;letter-spacing:0.12em;transition:color var(--transition)}.nav-links a:hover{color:var(--green-deep)}
+.hero{text-align:center;padding:6rem 2rem 4rem;background:linear-gradient(180deg,#f3ede4 0%,#faf7f2 100%);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 80%,rgba(201,169,110,0.06) 0%,transparent 50%),radial-gradient(circle at 70% 20%,rgba(29,84,67,0.04) 0%,transparent 50%);pointer-events:none}
+.hero-eyebrow{font-family:var(--sans);font-size:0.72rem;font-weight:500;text-transform:uppercase;letter-spacing:0.25em;color:var(--gold);margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.4rem,6vw,3.4rem);font-weight:700;color:var(--text);margin-bottom:1.5rem}
+.hero-intro{font-size:1rem;color:var(--text-body);max-width:580px;margin:0 auto;line-height:1.9;font-style:italic}
+.hero-divider{width:48px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:3rem auto 0}
+.content{max-width:var(--max-w);margin:0 auto;padding:5rem 2rem}
+.principle{margin-bottom:3.5rem;padding-bottom:3.5rem;border-bottom:1px solid var(--glass-border)}
+.principle:last-of-type{border-bottom:none}
+.principle-number{font-family:var(--sans);font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.2em;color:var(--gold);margin-bottom:0.5rem}
+.principle h2{font-size:1.8rem;margin-bottom:1.25rem}
+.principle p{font-size:0.95rem;line-height:1.9;margin-bottom:1rem}
+.principle p:last-child{margin-bottom:0}
+.walk-section{background:var(--bg-warm);border-radius:var(--radius-lg);padding:2.5rem;margin-top:1rem}
+.walk-section h3{font-size:1.4rem;margin-bottom:0.5rem}
+.walk-intro{font-size:0.85rem;color:var(--text-muted);font-style:italic;margin-bottom:2rem}
+.walk-group{margin-bottom:1.75rem}
+.walk-group:last-child{margin-bottom:0}
+.walk-group h4{font-size:1rem;font-family:var(--serif);margin-bottom:0.5rem;color:var(--text)}
+.walk-group p{font-size:0.9rem;line-height:1.85}
+.agreement-cta{text-align:center;padding:4rem 2rem;border-top:1px solid var(--glass-border)}
+.agreement-cta p{font-size:0.95rem;color:var(--text-muted);margin-bottom:1.5rem}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--green-deep),var(--green-mid));color:#fff;padding:0.85rem 2.2rem;border-radius:var(--radius);font-size:0.85rem;font-weight:600;text-decoration:none;letter-spacing:0.03em;transition:all var(--transition);box-shadow:0 4px 14px rgba(29,84,67,0.18)}.btn:hover{opacity:0.9;color:#fff;transform:translateY(-1px)}
+footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;text-align:center}
+.footer-links{display:flex;justify-content:center;gap:1.75rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;transition:color var(--transition)}.footer-links a:hover{color:var(--gold)}
+.footer-email{margin-bottom:1.5rem}.footer-email a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.85rem}.footer-email a:hover{color:var(--gold)}
+.footer-copy{font-size:0.72rem;color:rgba(255,255,255,0.35)}
+@media(max-width:600px){.content{padding:3rem 1.25rem}.hero{padding:4rem 1.25rem 3rem}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-brand" href="index.html">The Tranquillity</a>
+  <div class="nav-links">
+    <a href="index.html">&larr; Welcome Portal</a>
+    <a href="user-agreement.html">User Agreement</a>
+  </div>
+</nav>
+<section class="hero">
+  <p class="hero-eyebrow">The Tranquillity Community</p>
+  <h1>Our Principles</h1>
+  <p class="hero-intro">These principles are the culture and code of The Tranquillity community. They are not specific to any single offering. Whether you are joining a retreat, a course, a session, or any other experience within our community, these principles apply. They belong equally to our facilitation team and to every person who chooses to walk with us.</p>
+  <div class="hero-divider"></div>
+</section>
+<div class="content">
+
+  <div class="principle">
+    <p class="principle-number">I</p>
+    <h2>Open Mind, Open Heart</h2>
+    <p>Everything we offer begins here. An open mind makes room for new ways of seeing. An open heart makes room for new ways of feeling. You do not need to arrive with certainty or prior experience. You only need to come as you are, and remain genuinely open to what might meet you.</p>
+  </div>
+
+  <div class="principle">
+    <p class="principle-number">II</p>
+    <h2>Beyond Judgment</h2>
+    <p>This is an open-heart-centred space. Before you arrive, we encourage you to begin releasing the inner filters that so often stand between us and genuine openness: the fear of being judged, the weight of shame, the habit of holding back what feels too raw or too exposed to share.</p>
+    <p>These filters are human. They are not failings. But in this space, they are also not needed. Every person in this room is here for the same reason you are. The depth of what becomes possible here depends entirely on each of us feeling safe enough to be seen fully, without armour.</p>
+    <p>We do not ask you to arrive already free of judgment. We encourage you to set the intention to leave it at the door. This is not an expectation. It is an invitation, and one we extend with gentleness and with complete understanding of how much courage it takes to accept it.</p>
+  </div>
+
+  <div class="principle">
+    <p class="principle-number">III</p>
+    <h2>The Living Lineage</h2>
+    <p>The teachings at the heart of The Tranquillity draw from mystery school traditions, new age and metaphysical philosophy, and living practices of consciousness expansion. This includes advanced energetic work, multidimensional perspectives on awareness, and other modalities that sit outside conventional or mainstream frameworks.</p>
+    <p>This is not a fixed doctrine. It is a living, evolving body of knowledge carried by those who came before us and those who continue to walk this path. The material may challenge conventional beliefs and invite profound personal reflection. It is best received with an open curiosity toward spiritual and new age information, and a willingness to explore what lies beyond the familiar.</p>
+    <p>To enter this space is to honour the lineage from which it comes. We ask that you receive these teachings with respect, hold them with discretion, and carry them forward with integrity.</p>
+  </div>
+
+  <div class="principle">
+    <p class="principle-number">IV</p>
+    <h2>Life Is the Great Teacher</h2>
+    <p>Every experience carries a lesson, including the difficult ones. We do not come to this work to bypass what is hard. We come to meet it differently, to ask what it is asking of us, and to extract what it has to offer.</p>
+    <p>Growth is not always comfortable, and that is not a sign that something has gone wrong. Challenges, resistance, and moments of discomfort are not obstacles to the journey. They are the journey. The soul is always in the process of becoming, and nothing that arises in this work is wasted.</p>
+  </div>
+
+  <div class="principle">
+    <p class="principle-number">V</p>
+    <h2>Sacred Silence</h2>
+    <p>Silence is not simply the absence of sound. It is an active practice, a chosen state of inner stillness that allows you to hear what is truly arising within you. The more we fill our experience with outward noise and constant exchange, the harder it becomes to access the deeper layers of ourselves that this work is designed to reach.</p>
+    <p>We encourage you to become comfortable with silence, both around you and within you. In the quiet, clarity emerges. In the stillness, the most important realisations find their way to the surface. The Tranquillity creates space for this deliberately, and we ask that you honour it, not as a restriction, but as one of the most profound gifts you can give yourself on this journey.</p>
+  </div>
+
+  <div class="principle" id="sovereignty">
+    <p class="principle-number">VI</p>
+    <h2>Sovereignty</h2>
+    <p>You are the authority on your own experience. No teaching, facilitator, or fellow community member holds more wisdom about your inner world than you do. We will offer tools and walk alongside you. What you do with what arises is always, entirely, yours.</p>
+    <p>Sovereignty means taking full responsibility for your participation, your choices, and your wellbeing. It means communicating honestly when something does not feel right. It means showing up with integrity, to yourself first, and to everyone around you.</p>
+  </div>
+
+  <div class="principle">
+    <p class="principle-number">VII</p>
+    <h2>We Respect One Another</h2>
+    <p>We come from different backgrounds, different beliefs, and different chapters of life. What unites us is the decision to be here. We ask everyone in this community to treat one another with consistent care and consideration, to honour boundaries, to listen without fixing, and to hold every person&rsquo;s dignity as non-negotiable.</p>
+    <p>Share your perspective when invited. Do not impose it. Trust that every person in this space carries the wisdom they need for their own path.</p>
+  </div>
+
+  <div class="principle" id="sacred-space">
+    <p class="principle-number">VIII</p>
+    <h2>We Hold Sacred Space</h2>
+    <p>What people share about themselves within this community is held in complete confidence. The personal stories, disclosures, and vulnerabilities of those we journey alongside are not ours to carry beyond the space in which they were shared. This applies in any format, in person, online, or in writing, and to every member of our community equally.</p>
+    <p>The spirit of what we create together, the collective energy, the atmosphere of transformation, is something we are proud to share with the world. But the personal is always protected. These two things are not in conflict. They are both expressions of deep respect.</p>
+  </div>
+
+  <div class="principle" id="vehicles-of-change">
+    <p class="principle-number">IX</p>
+    <h2>We Are Vehicles of Change</h2>
+    <p>Transformation, once experienced, has a responsibility to move. This work is not meant to stay contained. Every person who walks through a genuine shift carries something back into the world, and that ripple matters.</p>
+    <p>Sharing the spirit of this journey is part of the practice itself. When we document our experiences, when we speak about what this work has opened in us, we are not promoting a product. We are extending an invitation to someone who is still searching, who may not yet know that this kind of work exists, or that it is available to them.</p>
+    <p>As a member of this community, your presence and your willingness to be part of that story are expressions of this principle. What we share is always the spirit of the collective. The personal stories of individuals are always protected. Both are true at once, and at The Tranquillity, they always will be.</p>
+  </div>
+
+  <div class="walk-section">
+    <h3>How We Walk Together</h3>
+    <p class="walk-intro">The practical expressions of our principles, applicable across all Tranquillity experiences.</p>
+    <div class="walk-group">
+      <h4>In conversation</h4>
+      <p>Listen with your whole self. Speak from your own experience using &ldquo;I&rdquo; rather than &ldquo;you&rdquo; or &ldquo;we.&rdquo; Refrain from offering unsolicited advice or trying to resolve what another person is moving through. When something surfaces that needs to be spoken, bring it to the facilitation team. They are trained to hold what arises and to help you understand it with clarity. Many perspectives from many directions can create confusion; the facilitators are here precisely so that does not happen.</p>
+    </div>
+    <div class="walk-group">
+      <h4>In the space</h4>
+      <p>Honour physical boundaries and always ask before touching. Commit to being fully present by minimising digital distractions during shared time. Abstain from alcohol and mind-altering substances throughout any immersive experience. Treat every shared environment with reverence.</p>
+    </div>
+    <div class="walk-group">
+      <h4>In yourself</h4>
+      <p>Honour the silence. Give yourself permission to be still. Approach each session with a beginner&rsquo;s mind. You always have the right to pass. Share only what you are ready to share, only when you are ready. Meet discomfort with gentleness rather than resistance.</p>
+    </div>
+    <div class="walk-group">
+      <h4>With one another</h4>
+      <p>This community holds people of every background, belief, and identity. Honour the value of every person. Share your perspective when invited. Do not impose it.</p>
+    </div>
+  </div>
+
+  <div class="agreement-cta">
+    <p>Ready to complete your onboarding? Please read and sign the User Agreement.</p>
+    <a class="btn" href="https://forms.gle/H2WophjVLuVWpuG87" target="_blank" rel="noopener">Sign the User Agreement &rarr;</a>
+  </div>
+
+</div>
+<footer>
+  <div class="footer-links">
+    <a href="https://thetranquillity.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+    <a href="https://thetranquillity.co.uk/term-and-condition-retreat/" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+    <a href="https://forms.gle/H2WophjVLuVWpuG87" target="_blank" rel="noopener">User Agreement</a>
+    <a href="principles.html">Our Principles</a>
+  </div>
+  <div class="footer-email"><a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a></div>
+  <div class="footer-copy">&copy; 2026 The Tranquillity Retreats. All rights reserved.</div>
+</footer>
+</body>
+</html>
