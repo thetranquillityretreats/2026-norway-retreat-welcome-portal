@@ -25,7 +25,8 @@ h1,h2,h3,h4{font-family:var(--serif);color:var(--text);font-weight:700;line-heig
 a{color:var(--green-deep);transition:color var(--transition)}a:hover{color:var(--gold)}
 nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);padding:0.85rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .nav-brand{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:0.03em;transition:color var(--transition)}.nav-brand:hover{color:var(--gold)}
-.nav-link{font-size:0.75rem;font-weight:500;color:var(--text-muted);text-decoration:none;text-transform:uppercase;letter-spacing:0.12em;transition:color var(--transition)}.nav-link:hover{color:var(--green-deep)}
+.nav-links{display:flex;gap:1.75rem;align-items:center}
+.nav-links a{font-size:0.75rem;font-weight:500;color:var(--text-muted);text-decoration:none;text-transform:uppercase;letter-spacing:0.12em;transition:color var(--transition)}.nav-links a:hover{color:var(--green-deep)}
 .hero{text-align:center;padding:6rem 2rem 4rem;background:linear-gradient(180deg,#f3ede4 0%,#faf7f2 100%);position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 80%,rgba(201,169,110,0.06) 0%,transparent 50%),radial-gradient(circle at 70% 20%,rgba(29,84,67,0.04) 0%,transparent 50%);pointer-events:none}
 .hero-eyebrow{font-family:var(--sans);font-size:0.72rem;font-weight:500;text-transform:uppercase;letter-spacing:0.25em;color:var(--gold);margin-bottom:1.5rem}
@@ -60,7 +61,10 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;tex
 <body>
 <nav>
   <a class="nav-brand" href="index.html">The Tranquillity</a>
-  <a class="nav-link" href="user-agreement.html">User Agreement &rarr;</a>
+  <div class="nav-links">
+    <a href="index.html">&larr; Welcome Portal</a>
+    <a href="user-agreement.html">User Agreement</a>
+  </div>
 </nav>
 <section class="hero">
   <p class="hero-eyebrow">The Tranquillity Community</p>
@@ -106,7 +110,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;tex
     <p>We encourage you to become comfortable with silence, both around you and within you. In the quiet, clarity emerges. In the stillness, the most important realisations find their way to the surface. The Tranquillity creates space for this deliberately, and we ask that you honour it, not as a restriction, but as one of the most profound gifts you can give yourself on this journey.</p>
   </div>
 
-  <div class="principle">
+  <div class="principle" id="sovereignty">
     <p class="principle-number">VI</p>
     <h2>Sovereignty</h2>
     <p>You are the authority on your own experience. No teaching, facilitator, or fellow community member holds more wisdom about your inner world than you do. We will offer tools and walk alongside you. What you do with what arises is always, entirely, yours.</p>

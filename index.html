@@ -54,8 +54,7 @@ section{padding:6rem 2rem;position:relative}
 .glass-card{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:var(--radius-lg);box-shadow:var(--card-shadow);transition:border-color var(--transition),box-shadow var(--transition),transform var(--transition)}.glass-card:hover{border-color:var(--glass-border-hover);box-shadow:var(--card-shadow-hover);transform:translateY(-2px)}
 #checklist{background:var(--bg)}.steps-grid{display:grid;gap:1.75rem;grid-template-columns:repeat(3,1fr);margin-top:2rem}@media(max-width:900px){.steps-grid{grid-template-columns:1fr}}
 .step-card{padding:2.25rem}.step-number{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--green-deep),var(--green-mid));color:#fff;font-family:var(--serif);font-size:1.15rem;font-weight:700;margin-bottom:1.25rem;box-shadow:0 4px 14px rgba(29,84,67,0.2)}
-.step-content h3{font-size:1.4rem;margin-bottom:0.75rem}.step-content p{font-size:0.92rem;margin-bottom:1.25rem}
-.step-parts{list-style:none;margin-bottom:1.5rem}.step-parts li{font-size:0.88rem;color:var(--text-body);padding:0.45rem 0 0.45rem 1.5rem;position:relative}.step-parts li::before{content:'';position:absolute;left:0;top:0.85rem;width:8px;height:8px;border-radius:50%;background:var(--green-soft);border:2px solid var(--green-bright)}.step-parts li strong{color:var(--text)}.step-parts li a{font-weight:500}
+.step-content h3{font-size:1.4rem;margin-bottom:0.75rem}.step-content p{font-size:0.92rem;margin-bottom:1.25rem;line-height:1.8}
 .step-cta{display:inline-block;background:linear-gradient(135deg,var(--green-deep),var(--green-mid));color:#fff;padding:0.75rem 1.8rem;border-radius:var(--radius);font-size:0.85rem;font-weight:600;text-decoration:none;letter-spacing:0.03em;transition:all var(--transition);box-shadow:0 4px 14px rgba(29,84,67,0.18);cursor:pointer}.step-cta:hover{background:linear-gradient(135deg,var(--green-mid),var(--green-bright));box-shadow:0 8px 24px rgba(29,84,67,0.25);transform:translateY(-1px);color:#fff}
 .step-note{display:block;margin-top:0.75rem;font-size:0.78rem;color:var(--text-muted);font-style:italic}
 .app-store-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:0.75rem}.app-store-btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.6rem 1.2rem;border:1px solid var(--glass-border);border-radius:var(--radius);font-size:0.82rem;font-weight:500;color:var(--text-body);text-decoration:none;transition:all var(--transition)}.app-store-btn:hover{border-color:var(--green-deep);color:var(--green-deep);background:var(--green-soft)}.app-store-btn svg{width:16px;height:16px;flex-shrink:0}
@@ -115,37 +114,22 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 <p class="section-eyebrow reveal">Your Welcome Portal</p>
 <h2 class="section-title reveal">Three Steps to Get Ready</h2>
 <div class="steps-grid">
-
 <div class="step-card glass-card reveal">
 <div class="step-number">1</div>
 <div class="step-content">
 <h3>Sign the User Agreement</h3>
-<p>Before anything else, please read and sign your User Agreement. This covers everything you need to understand about the nature of this retreat and your participation in it.</p>
-<ul class="step-parts">
-<li><strong>Participant Advisory</strong> &ndash; the nature of this work, what to expect, and your rights during the retreat</li>
-<li><strong>Sharing Your Journey</strong> &ndash; how we document the retreat and your preferences around photography and footage</li>
-<li><strong>Our Shared Agreement</strong> &ndash; the principles and commitments that hold this space for everyone</li>
-</ul>
-<a class="step-cta" href="user-agreement.html" target="_blank" rel="noopener">Read &amp; Sign User Agreement</a>
-<span class="step-note">Before signing, we invite you to read <a href="principles.html">Our Principles</a> &ndash; the culture and code of The Tranquillity community.</span>
+<p>Before anything else, please read and sign your User Agreement. This single document covers your Participant Advisory, how we document and share the retreat together, and the shared principles that hold this space for everyone. We invite you to read <a href="principles.html">Our Principles</a> before signing.</p>
+<a class="step-cta" href="user-agreement.html">Read &amp; Sign User Agreement</a>
 </div>
 </div>
-
 <div class="step-card glass-card reveal">
 <div class="step-number">2</div>
 <div class="step-content">
 <h3>Complete the Health Intake Form</h3>
-<p>Your safety is our deepest priority. This confidential form helps our facilitation team understand your health background so we can support you fully throughout the retreat.</p>
-<ul class="step-parts">
-<li><strong>Brief History</strong> &ndash; your medical background and any conditions relevant to breathwork or intensive practice</li>
-<li><strong>Emergency Contacts</strong> &ndash; who we should reach in the unlikely event it is needed</li>
-<li><strong>Dietary Requirements</strong> &ndash; food allergies and preferences for your retreat meals</li>
-</ul>
+<p>Your safety is our deepest priority. This confidential form covers your medical background, emergency contacts, and dietary requirements for retreat meals. Everything shared is held in strict confidence and used solely by your facilitation team to support your experience.</p>
 <a class="step-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSez_0UsT4EHZhnRHDJBqwVzcp4b5tBoAY_F791dWyfUKhZoTg/viewform" target="_blank" rel="noopener">Open Health Intake Form</a>
-<span class="step-note">All information is held in strict confidence by the facilitation team and used solely to support your experience.</span>
 </div>
 </div>
-
 <div class="step-card glass-card reveal">
 <div class="step-number">3</div>
 <div class="step-content">
@@ -159,7 +143,6 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 <span class="step-note">Your personal WhatsApp invite link will be sent at least 3 months before the retreat, once your onboarding is complete.</span>
 </div>
 </div>
-
 </div>
 </div>
 </section>

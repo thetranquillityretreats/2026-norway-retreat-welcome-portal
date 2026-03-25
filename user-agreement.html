@@ -26,7 +26,8 @@ h1,h2,h3,h4{font-family:var(--serif);color:var(--text);font-weight:700;line-heig
 a{color:var(--green-deep);transition:color var(--transition)}a:hover{color:var(--gold)}
 nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);padding:0.85rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .nav-brand{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:0.03em;transition:color var(--transition)}.nav-brand:hover{color:var(--gold)}
-.nav-link{font-size:0.75rem;font-weight:500;color:var(--text-muted);text-decoration:none;text-transform:uppercase;letter-spacing:0.12em;transition:color var(--transition)}.nav-link:hover{color:var(--green-deep)}
+.nav-links{display:flex;gap:1.75rem;align-items:center}
+.nav-links a{font-size:0.75rem;font-weight:500;color:var(--text-muted);text-decoration:none;text-transform:uppercase;letter-spacing:0.12em;transition:color var(--transition)}.nav-links a:hover{color:var(--green-deep)}
 .hero{text-align:center;padding:6rem 2rem 4rem;background:linear-gradient(180deg,#f3ede4 0%,#faf7f2 100%);position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 80%,rgba(201,169,110,0.06) 0%,transparent 50%),radial-gradient(circle at 70% 20%,rgba(29,84,67,0.04) 0%,transparent 50%);pointer-events:none}
 .hero-eyebrow{font-family:var(--sans);font-size:0.72rem;font-weight:500;text-transform:uppercase;letter-spacing:0.25em;color:var(--gold);margin-bottom:1.5rem}
@@ -63,15 +64,20 @@ nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.92);backdrop
 .solicitor-note{background:rgba(201,169,110,0.06);border:1px solid var(--gold-border);border-radius:var(--radius);padding:1.25rem 1.5rem;margin-top:3rem;font-size:0.82rem;line-height:1.75;color:var(--text-muted)}
 .solicitor-note strong{color:var(--text)}
 footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;text-align:center}
-.footer-email a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.85rem}.footer-email a:hover{color:var(--gold)}
-.footer-copy{margin-top:1rem;font-size:0.72rem;color:rgba(255,255,255,0.35)}
+.footer-links{display:flex;justify-content:center;gap:1.75rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;transition:color var(--transition)}.footer-links a:hover{color:var(--gold)}
+.footer-email{margin-bottom:1.5rem}.footer-email a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.85rem}.footer-email a:hover{color:var(--gold)}
+.footer-copy{font-size:0.72rem;color:rgba(255,255,255,0.35)}
 @media(max-width:600px){.content{padding:3rem 1.25rem}.hero{padding:4rem 1.25rem 3rem}.hero-meta{gap:1.5rem}.declarations{padding:1.75rem}}
 </style>
 </head>
 <body>
 <nav>
   <a class="nav-brand" href="index.html">The Tranquillity</a>
-  <a class="nav-link" href="principles.html">Our Principles</a>
+  <div class="nav-links">
+    <a href="index.html">&larr; Welcome Portal</a>
+    <a href="principles.html">Our Principles</a>
+  </div>
 </nav>
 <section class="hero">
   <p class="hero-eyebrow">The Tranquillity Retreats</p>
@@ -98,72 +104,46 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;tex
     <p>The Retreat takes place from 5 to 9 October 2026 at Panorama Hotel &amp; Resort, Steinsland, Norway.</p>
     <p>The Tranquillity Retreat is a five-day immersion into inner exploration, drawing from mystery school teachings, breathwork, sound healing, energy work, and consciousness expansion practices. This is not a wellness holiday or a surface-level relaxation experience. It is a deliberate journey through layers of self-discovery, ancestral connection, and expanded awareness.</p>
     <p>The teachings offered draw from mystery school traditions, new age and metaphysical philosophy, and advanced practices of consciousness expansion, including material that may challenge conventional beliefs and invite profound personal reflection. This retreat is best suited for individuals with an open mind toward spiritual and new age information. If you feel called to explore expanded consciousness and soul-level understanding, you are exactly where you need to be.</p>
-    <p>Our facilitation team creates a safe, held space for this work. Every session is designed with intention, pacing, and integration in mind. The Retreat may include, but is not limited to:</p>
-    <ul>
-      <li>Guided breathwork and breathing exercises</li>
-      <li>Sound healing and gong ceremonies</li>
-      <li>Fire ceremony</li>
-      <li>Meditation, visualisation, and somatic practices</li>
-      <li>Movement and embodied practices</li>
-      <li>Group workshops and reflective sessions</li>
-      <li>A Norway excursion in nature</li>
-      <li>Community sharing and sacred space</li>
-    </ul>
-    <p>The specific programme may evolve to honour what the group needs. We will always be transparent with you about any changes.</p>
+    <p>Our facilitation team creates a safe, held space for this work. Every session is designed with intention, pacing, and integration in mind. The Retreat may include, but is not limited to, guided breathwork and breathing exercises, sound healing and gong ceremonies, fire ceremony, meditation, visualisation and somatic practices, movement and embodied practices, group workshops and reflective sessions, a Norway excursion in nature, and community sharing in sacred space. The specific programme may evolve to honour what the group needs. We will always be transparent with you about any changes.</p>
   </div>
 
   <div class="section">
     <p class="section-number">3</p>
     <h2>What You May Experience</h2>
-    <p>During the Retreat, it is completely natural to notice a range of physical, emotional, and energetic responses. These may include:</p>
-    <ul>
-      <li>Emotional releases such as tears, laughter, or the surfacing of old memories and feelings</li>
-      <li>Physical sensations such as tingling, warmth, coolness, or involuntary movement</li>
-      <li>Deep states of relaxation or heightened awareness</li>
-      <li>Vivid inner imagery, insights, or moments of profound clarity</li>
-      <li>Temporary fatigue or heightened energy following sessions</li>
-    </ul>
-    <p>These responses are a natural part of the process. Our facilitation team is trained to support you through them. You are never alone in this.</p>
+    <p>During the Retreat, it is completely natural to notice a range of physical, emotional, and energetic responses, including emotional releases such as tears, laughter, or the surfacing of old memories; physical sensations such as tingling, warmth, or involuntary movement; deep states of relaxation or heightened awareness; vivid inner imagery or moments of profound clarity; and temporary fatigue or heightened energy following sessions. These responses are a natural part of the process. Our facilitation team is trained to support you through them. You are never alone in this.</p>
   </div>
 
   <div class="section">
     <p class="section-number">4</p>
     <h2>Your Rights During the Retreat</h2>
-    <ul>
-      <li>You may step out of any session at any time, for any reason. Simply stand and leave quietly. A facilitator will check on you.</li>
-      <li>You are always encouraged to communicate with the facilitation team if anything feels uncomfortable or overwhelming.</li>
-      <li>Integration sessions are built into the schedule to help you process and ground what surfaces.</li>
-    </ul>
+    <p>You may step out of any session at any time, for any reason. Simply stand and leave quietly and a facilitator will check on you. You are always encouraged to communicate with the facilitation team if anything feels uncomfortable or overwhelming. Integration sessions are built into the schedule to help you process and ground what surfaces.</p>
   </div>
 
   <div class="section">
     <p class="section-number">5</p>
     <h2>Our Shared Agreement</h2>
-    <p>A retreat of this nature is a co-creation. What we build together depends on every person in the room honouring the space. In joining us, you agree to the following.</p>
-    <h3>5.1 Respect</h3>
-    <p>You agree to treat all participants, facilitators, and supporting team with care and consideration throughout the Retreat. Behaviour that is harmful, discriminatory, or disruptive to others will not be tolerated and may result in your being asked to leave without a refund.</p>
-    <h3>5.2 Personal Responsibility</h3>
-    <p>You are the authority on your own experience. You agree to take ownership of your physical, emotional, and mental wellbeing throughout the Retreat and to make choices that honour where you are.</p>
-    <h3>5.3 Honesty</h3>
-    <p>You agree to be truthful with us, particularly regarding your health, your history, and anything that might affect your experience or the safety of others. If something changes before the Retreat, please let us know.</p>
-    <h3>5.4 Confidentiality</h3>
-    <p>The Retreat is a sacred container. What is shared by participants during sessions remains within the group. You agree not to share the personal disclosures, stories, or experiences of other participants outside of the Retreat space, whether publicly, privately, or on any platform, without their explicit consent.</p>
+    <div class="principles-ref">The values in this section are rooted in <a href="principles.html">The Tranquillity Principles</a>. We invite you to read them in full before signing.</div>
+    <p>A retreat of this nature is a co-creation. What we build together depends on every person in the room honouring the space. In joining us, you agree to treat all participants, facilitators, and supporting team with care and consideration throughout the Retreat. Behaviour that is harmful, discriminatory, or disruptive to others will not be tolerated and may result in your being asked to leave without a refund.</p>
+    <p>You are the authority on your own experience. You agree to take ownership of your physical, emotional, and mental wellbeing, to be truthful with us regarding your health and history, and to communicate honestly if anything changes. What is shared by participants during sessions remains within the group. You agree not to share the personal disclosures, stories, or experiences of other participants outside of the Retreat space without their explicit consent.</p>
   </div>
 
   <div class="section">
     <p class="section-number">6</p>
     <h2>Your Health and Wellbeing</h2>
+    <div class="principles-ref">Taking full ownership of your experience is at the heart of <a href="principles.html#sovereignty">Principle VI: Sovereignty</a>. Your commitment to honesty in this section is an expression of that principle.</div>
     <p>Your safety is our deepest priority. The practices we offer, including breathwork, ceremonial work, and deep meditative states, can create profound shifts physically, emotionally, and energetically. These experiences are by design, and they are held with care.</p>
     <p>The facilitators of The Tranquillity are not licensed medical or mental health professionals. This Retreat is a wellness and personal development experience. It is not a substitute for professional medical or psychological care. If you are currently taking prescribed medication, please continue to do so as directed by your healthcare provider.</p>
-    <p>We ask that you complete the Health Intake Form honestly and in full. This is a separate form sent alongside this agreement. It allows our facilitation team to understand your history and ensure that every practice offered is appropriate for you.</p>
-    <p>By signing this agreement, you confirm that you have disclosed all relevant medical, psychiatric, and physical health information in your Health Intake Form; that you have consulted a qualified medical professional if you have any concerns about your ability to participate safely; and that you accept personal responsibility for your wellbeing in relation to the practices offered, based on the information you have provided. If your circumstances change after submitting your Health Intake Form, please contact us at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> before the Retreat begins.</p>
+    <p>We ask that you complete the Health Intake Form honestly and in full. This is a separate form sent alongside this agreement. It allows our facilitation team to understand your history and ensure that every practice offered is appropriate for you. By signing this agreement, you confirm that you have disclosed all relevant medical, psychiatric, and physical health information in your Health Intake Form; that you have consulted a qualified medical professional if you have any concerns about your ability to participate safely; and that you accept personal responsibility for your wellbeing in relation to the practices offered. If your circumstances change after submitting your Health Intake Form, please contact us at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> before the Retreat begins.</p>
+    <p>In the event of injury or illness during the Retreat, you consent to emergency medical assistance being sought on your behalf. You acknowledge that you are solely responsible for any associated costs, and that The Tranquillity makes no representations about the availability or outcome of any such treatment.</p>
   </div>
 
   <div class="section">
     <p class="section-number">7</p>
-    <h2>Understanding the Nature of This Work</h2>
+    <h2>Release, Waiver and Indemnity</h2>
     <p>Transformational work, by its nature, involves stepping into the unknown. Growth and deep inner work can sometimes bring up emotions, memories, or physical sensations that feel intense or unexpected. This is a natural part of the process and will be held and supported by your facilitation team throughout.</p>
-    <p>By choosing to attend, you acknowledge that participation in the Retreat, including travel to and from Norway, involves an inherent element of personal risk, and that The Tranquillity Retreats, its facilitators, employees, and contractors are not liable for any loss, injury, or harm arising from your participation, to the fullest extent permitted by law in England and Wales. We have designed every element of this Retreat with your safety and dignity in mind. This clause exists not to distance us from responsibility, but to reflect the shared nature of the journey we are undertaking together.</p>
+    <p>By choosing to attend, you hereby release, hold harmless, and indemnify The Tranquillity Retreats and its officers, directors, facilitators, employees, contractors, volunteers, agents, administrators, successors, and assigns (collectively the &ldquo;Released Parties&rdquo;) from any and all claims, damages, losses, and liabilities arising out of or in connection with your participation in the Retreat, including travel to and from Norway, to the fullest extent permitted by law in England and Wales. This release includes, but is not limited to, personal injury, illness, loss or damage to personal property, and any cause of action related to the premises or the activities offered.</p>
+    <p>You agree that this release applies to you, your family, heirs, executors, and anyone else who may bring legal action on your behalf in the future. The Tranquillity Retreats is not responsible for any loss, theft, or damage to personal belongings before, during, or after the Retreat. We encourage you to take appropriate care of your personal property throughout.</p>
+    <p>We have designed every element of this Retreat with your safety and dignity in mind. This clause exists not to distance us from responsibility, but to reflect the shared nature of the journey we are undertaking together.</p>
   </div>
 
   <div class="section">
@@ -172,13 +152,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;tex
     <h3>8.1 Deposit and Payment</h3>
     <p>A non-refundable deposit of &pound;100 is required to secure your place. The remaining balance is due in full by 1 September 2026. Early bird pricing of &pound;1,222 is available until 10 May 2026, after which the full price of &pound;1,555 applies.</p>
     <h3>8.2 Cancellation by You</h3>
-    <p>If you need to withdraw from the Retreat, please notify us in writing at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> as soon as possible.</p>
-    <ul>
-      <li>More than 60 days before the Retreat: full refund, minus the &pound;100 non-refundable deposit</li>
-      <li>30 to 60 days before the Retreat: 50% refund</li>
-      <li>Fewer than 30 days before the Retreat: no refund</li>
-    </ul>
-    <p>We strongly encourage all participants to hold comprehensive travel insurance that covers cancellation, medical expenses, and trip interruption.</p>
+    <p>If you need to withdraw from the Retreat, please notify us in writing at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> as soon as possible. Cancellations made more than 60 days before the Retreat are eligible for a full refund minus the &pound;100 non-refundable deposit. Cancellations made 30 to 60 days before the Retreat will receive a 50% refund. Cancellations made fewer than 30 days before the Retreat are non-refundable. We strongly encourage all participants to hold comprehensive travel insurance that covers cancellation, medical expenses, and trip interruption.</p>
     <h3>8.3 Cancellation by Us</h3>
     <p>In the unlikely event that we need to cancel or significantly alter the Retreat, we will notify you immediately and offer either a full refund or the option to transfer to a future date. We are not liable for any costs incurred by participants through third parties, such as flights or accommodation booked independently.</p>
     <h3>8.4 Transfer of Place</h3>
@@ -194,7 +168,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;tex
   <div class="section">
     <p class="section-number">10</p>
     <h2>Capturing the Journey Together</h2>
-    <div class="principles-ref">Documenting and sharing the spirit of this work is one of The Tranquillity&rsquo;s core principles. You can read more in <a href="principles.html#vehicles-of-change">Principle VII: We Are Vehicles of Change</a>.</div>
+    <div class="principles-ref">Documenting and sharing the spirit of this work is one of The Tranquillity&rsquo;s core principles. You can read more in <a href="principles.html#vehicles-of-change">Principle IX: We Are Vehicles of Change</a>.</div>
     <p>At The Tranquillity, we document our retreats with love and intentionality. Photographs and short videos are taken throughout our time together to honour the journey and share its spirit with the wider community. Documentation is woven into the fabric of the experience, not separate from it.</p>
     <p>For any content that is both clearly identifiable and captures something of a personal, intimate nature consistent with the depth of work we do here, we will always reach out to you personally before publishing. This is our commitment to every participant, regardless of the preference indicated below.</p>
     <p>We also ask that all participants extend this same care to one another. Please do not photograph or film fellow participants during sessions or ceremonies, and always ask before sharing images of others on social media. Please do not use any Retreat content for commercial purposes.</p>
@@ -235,7 +209,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;tex
 
       <div class="declaration-group">
         <h4>Responsibility &amp; Release</h4>
-        <label class="declaration-item"><input type="checkbox"> I take full personal responsibility for my participation and wellbeing during the Retreat. I understand the facilitators are not medical professionals and this is not a medical or therapeutic intervention, and I kindly release The Tranquillity and its team from any claims or liability related to my participation in this experience.</label>
+        <label class="declaration-item"><input type="checkbox"> I take full personal responsibility for my participation and wellbeing during the Retreat. I understand the facilitators are not medical professionals and this is not a medical or therapeutic intervention. I hereby release, hold harmless, and indemnify The Tranquillity Retreats and all Released Parties as described in Section 7, including in respect of personal injury, property loss, and any other claims arising from my participation. I agree this release applies to my heirs and anyone who may bring legal action on my behalf.</label>
       </div>
 
       <div class="declaration-group">
@@ -265,11 +239,16 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;tex
       </div>
     </div>
 
-    <div class="solicitor-note"><strong>Internal note for the team &mdash; remove before going live:</strong> Section 7 (liability waiver) requires solicitor review before this document is published. The scope of what can lawfully be waived under the Consumer Rights Act 2015 and the Unfair Contract Terms Act 1977 in England and Wales needs to be confirmed.</div>
+    <div class="solicitor-note"><strong>Internal note for the team &mdash; remove before going live:</strong> Section 7 (Release, Waiver and Indemnity) requires solicitor review before this document is published. The scope of what can lawfully be waived under the Consumer Rights Act 2015 and the Unfair Contract Terms Act 1977 in England and Wales needs to be confirmed. The heirs clause and named party list have been added following review of comparable retreat waivers.</div>
   </div>
 
 </div>
 <footer>
+  <div class="footer-links">
+    <a href="https://thetranquillity.co.uk/term-and-condition-retreat/" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+    <a href="user-agreement.html">User Agreement</a>
+    <a href="principles.html">Our Principles</a>
+  </div>
   <div class="footer-email"><a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a></div>
   <div class="footer-copy">&copy; 2026 The Tranquillity Retreats. All rights reserved.</div>
 </footer>
