@@ -52,7 +52,10 @@ section{padding:6rem 2rem;position:relative}
 .hero-meta-item{text-align:center}.hero-meta-item .label{display:block;font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--text-muted);margin-bottom:0.3rem}.hero-meta-item .value{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--text)}
 .hero-divider{width:48px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:3.5rem auto 0}
 .glass-card{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:var(--radius-lg);box-shadow:var(--card-shadow);transition:border-color var(--transition),box-shadow var(--transition),transform var(--transition)}.glass-card:hover{border-color:var(--glass-border-hover);box-shadow:var(--card-shadow-hover);transform:translateY(-2px)}
-#checklist{background:var(--bg)}.steps-grid{display:grid;gap:1.75rem;grid-template-columns:repeat(3,1fr);margin-top:2rem}@media(max-width:900px){.steps-grid{grid-template-columns:1fr}}
+#checklist{background:var(--bg)}
+.steps-grid{display:grid;gap:1.75rem;grid-template-columns:repeat(2,1fr);margin-top:2rem}
+.step-full{grid-column:1/-1}
+@media(max-width:700px){.steps-grid{grid-template-columns:1fr}.step-full{grid-column:auto}}
 .step-card{padding:2.25rem}.step-number{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--green-deep),var(--green-mid));color:#fff;font-family:var(--serif);font-size:1.15rem;font-weight:700;margin-bottom:1.25rem;box-shadow:0 4px 14px rgba(29,84,67,0.2)}
 .step-content h3{font-size:1.4rem;margin-bottom:0.75rem}.step-content p{font-size:0.92rem;margin-bottom:1.25rem;line-height:1.8}
 .step-cta{display:inline-block;background:linear-gradient(135deg,var(--green-deep),var(--green-mid));color:#fff;padding:0.75rem 1.8rem;border-radius:var(--radius);font-size:0.85rem;font-weight:600;text-decoration:none;letter-spacing:0.03em;transition:all var(--transition);box-shadow:0 4px 14px rgba(29,84,67,0.18);cursor:pointer}.step-cta:hover{background:linear-gradient(135deg,var(--green-mid),var(--green-bright));box-shadow:0 8px 24px rgba(29,84,67,0.25);transform:translateY(-1px);color:#fff}
@@ -125,12 +128,12 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 <div class="step-card glass-card reveal">
 <div class="step-number">2</div>
 <div class="step-content">
-<h3>Complete the Health Intake Form</h3>
-<p>Your safety is our deepest priority. This confidential form covers your medical background, emergency contacts, and dietary requirements for retreat meals. Everything shared is held in strict confidence and used solely by your facilitation team to support your experience.</p>
+<h3>Brief History</h3>
+<p>Your safety is our deepest priority. The Health Intake Form covers your medical background, any relevant health conditions, emergency contacts, and dietary requirements for retreat meals. Everything shared is held in strict confidence and used solely by your facilitation team to support your experience.</p>
 <a class="step-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSez_0UsT4EHZhnRHDJBqwVzcp4b5tBoAY_F791dWyfUKhZoTg/viewform" target="_blank" rel="noopener">Open Health Intake Form</a>
 </div>
 </div>
-<div class="step-card glass-card reveal">
+<div class="step-card glass-card reveal step-full">
 <div class="step-number">3</div>
 <div class="step-content">
 <h3>Join the WhatsApp Group</h3>
@@ -265,6 +268,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 </section>
 <footer>
 <div class="footer-links">
+<a href="https://thetranquillity.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
 <a href="https://thetranquillity.co.uk/term-and-condition-retreat/" target="_blank" rel="noopener">Terms &amp; Conditions</a>
 <a href="user-agreement.html">User Agreement</a>
 <a href="principles.html">Our Principles</a>
