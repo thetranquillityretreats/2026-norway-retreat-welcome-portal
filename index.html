@@ -120,7 +120,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 <div class="step-card glass-card reveal">
 <div class="step-number">1</div>
 <div class="step-content">
-<h3>Sign the User Agreement</h3>
+<h3>User Agreement &amp; Media Policy</h3>
 <p>Before anything else, please read and sign your User Agreement. This single document covers your Participant Advisory, how we document and share the retreat together, and the shared principles that hold this space for everyone. We invite you to read <a href="principles.html">Our Principles</a> before signing.</p>
 <a class="step-cta" href="https://forms.gle/H2WophjVLuVWpuG87" target="_blank" rel="noopener">Read &amp; Sign User Agreement</a>
 </div>
@@ -247,7 +247,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3.5rem 2rem;t
 <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Is there Wi-Fi at the hotel?</button><div class="faq-a"><div class="faq-a-inner">Yes, complimentary Wi-Fi is available throughout the hotel and event spaces. That said, we encourage you to embrace this time as an opportunity to disconnect and be fully present in your experience.</div></div></div>
 <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Is there a spa?</button><div class="faq-a"><div class="faq-a-inner">Yes. Panorama Hotel has a wellness centre with two outdoor hot tubs, warm water pools, a cold plunge pool, steam bath, sauna, and a floating sauna on the water. All guests have complimentary access to these facilities. Additional spa treatments such as massages are available at an extra cost and can be booked directly with the hotel.</div></div></div>
 <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What time does the retreat finish on the final day?</button><div class="faq-a"><div class="faq-a-inner">Our closing ceremony and farewell lunch on Day Five concludes at approximately 14:30. We strongly encourage all participants to book return travel for the evening of 9 October or the morning of 10 October, so that you can be fully present for our closing without any travel pressure. Bergen Airport Flesland is approximately 40 minutes by car from the hotel.</div></div></div>
-<div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Can I arrive early or stay after the retreat?</button><div class="faq-a"><div class="faq-a-inner">If you would like to arrive a day early or extend your stay after the retreat, you are welcome to arrange this directly with the hotel. Additional nights would be at your own expense and subject to availability. You can contact Panorama Hotel &amp; Resort through their <a href="https://panoramahotell.no/en/" target="_blank" rel="noopener">website</a>.</div></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Can I arrive early or stay after the retreat?</button><div class="faq-a"><div class="faq-a-inner">If you would like to arrive a day early or extend your stay after the retreat, we have negotiated a special standard room rate exclusively for retreat participants. You can book directly with the hotel using the block code below.<br><br>Enter code <strong>bl-retreat_standard</strong> in the &lsquo;Block Code&rsquo; section before submitting your dates on the hotel booking page. The code is valid on the following dates only: <strong>3rd and 4th October</strong> (early arrival) and <strong>9th and 10th October</strong> (late departure). Payment is made at the time of booking, with 24-hour free cancellation.<br><br>If you need both an early arrival and a late departure, the code applies to one booking at a time. Simply complete two separate bookings, entering the code for each. Additional nights are at your own expense and subject to availability. You can book via the <a href="https://panoramahotell.no/en/" target="_blank" rel="noopener">Panorama Hotel &amp; Resort website</a>.</div></div></div>
 </div>
 </div>
 </section>
@@ -297,7 +297,7 @@ else{
 gsap.registerPlugin(ScrollTrigger);
 gsap.fromTo('.hero .reveal',{opacity:0,y:40},{opacity:1,y:0,duration:0.9,ease:'power3.out',stagger:0.15});
 document.querySelectorAll('section:not(.hero) .reveal').forEach(function(el){gsap.fromTo(el,{opacity:0,y:30},{scrollTrigger:{trigger:el,start:'top 88%',toggleActions:'play none none none'},opacity:1,y:0,duration:0.7,ease:'power2.out'});});
-document.querySelectorAll('.steps-grid,.dates-grid,.hotel-grid,.pack-grid,.hist-grid').forEach(function(grid){var cards=grid.querySelectorAll('.reveal');if(cards.length>1){gsap.fromTo(cards,{opacity:0,y:25},{scrollTrigger:{trigger:grid,start:'top 85%',toggleActions:'play none none none'},opacity:1,y:0,duration:0.6,ease:'power2.out',stagger:0.1});}});
+document.querySelectorAll('.steps-grid,.dates-grid,.hotel-grid,.pack-grid,.hist-grid').forEach(function(grid){var cards=grid.querySelectorAll('.reveal');if(cards.length>1){gsap.fromTo(cards,{opacity:0,y:25},{scrollTrigger:{trigger:grid,start:'top 85%',toggleActions:'play none none none'},opacity:1,y:0,duration:0.6,ease:'power2.out',stagger:0.1});}}); 
 }
 }catch(e){document.querySelectorAll('.reveal').forEach(function(el){el.style.opacity='1';el.style.transform='none';});}
 </script>
