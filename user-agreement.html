@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Agreement | The Tranquillity Retreats</title>
+<meta name="description" content="Norway 2026 Retreat User Agreement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#faf7f2;--bg-warm:#f3ede4;--bg-card:#ffffff;
+--card-shadow:0 2px 12px rgba(0,0,0,0.04);
+--glass-border:rgba(29,84,67,0.08);
+--text:#1a1a2e;--text-body:#3a3a4e;--text-muted:#6a6a7e;
+--green-deep:#1d5443;--green-mid:#267a5e;
+--gold:#c9a96e;--gold-border:rgba(201,169,110,0.25);
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'Libre Franklin',system-ui,sans-serif;
+--radius:8px;--radius-lg:12px;--max-w:760px;--transition:250ms cubic-bezier(0.4,0,0.2,1)
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--text-body);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;letter-spacing:0.01em}
+h1,h2,h3,h4{font-family:var(--serif);color:var(--text);font-weight:700;line-height:1.2}
+a{color:var(--green-deep);transition:color var(--transition)}a:hover{color:var(--gold)}
+nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);padding:0.85rem 2rem;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:0.03em;transition:color var(--transition)}.nav-brand:hover{color:var(--gold)}
+.nav-links{display:flex;gap:1.75rem;align-items:center}
+.nav-links a{font-size:0.75rem;font-weight:500;color:var(--text-muted);text-decoration:none;text-transform:uppercase;letter-spacing:0.12em;transition:color var(--transition)}.nav-links a:hover{color:var(--green-deep)}
+.hero{text-align:center;padding:6rem 2rem 4rem;background:linear-gradient(180deg,#f3ede4 0%,#faf7f2 100%);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 80%,rgba(201,169,110,0.06) 0%,transparent 50%),radial-gradient(circle at 70% 20%,rgba(29,84,67,0.04) 0%,transparent 50%);pointer-events:none}
+.hero-eyebrow{font-family:var(--sans);font-size:0.72rem;font-weight:500;text-transform:uppercase;letter-spacing:0.25em;color:var(--gold);margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.4rem,6vw,3.4rem);font-weight:700;color:var(--text);margin-bottom:1.5rem}
+.hero-meta{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.hero-meta-item{text-align:center}.hero-meta-item .label{display:block;font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--text-muted);margin-bottom:0.3rem}.hero-meta-item .value{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--text)}
+.hero-note{font-size:0.95rem;color:var(--text-body);max-width:560px;margin:0 auto;line-height:1.9;font-style:italic}
+.hero-divider{width:48px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:3rem auto 0}
+.content{max-width:var(--max-w);margin:0 auto;padding:5rem 2rem}
+.section{margin-bottom:3.5rem;padding-bottom:3.5rem;border-bottom:1px solid var(--glass-border)}
+.section:last-of-type{border-bottom:none}
+.section-number{font-family:var(--sans);font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.2em;color:var(--gold);margin-bottom:0.5rem}
+.section h2{font-size:1.6rem;margin-bottom:1.25rem}
+.section h3{font-size:1.05rem;font-weight:600;margin-bottom:0.6rem;margin-top:1.5rem;color:var(--text)}
+.section p{font-size:0.95rem;line-height:1.9;margin-bottom:1rem}
+.section p:last-child{margin-bottom:0}
+.section ul{list-style:none;margin:0.75rem 0 1rem}
+.section ul li{font-size:0.92rem;padding:0.35rem 0 0.35rem 1.4rem;position:relative;line-height:1.7}
+.section ul li::before{content:'';position:absolute;left:0;top:0.75rem;width:5px;height:5px;border-radius:50%;background:var(--green-mid)}
+.principles-ref{background:var(--bg-warm);border-left:3px solid var(--gold);padding:1.25rem 1.5rem;border-radius:0 var(--radius) var(--radius) 0;margin:1.5rem 0;font-size:0.9rem;line-height:1.8}
+.principles-ref a{font-weight:500}
+.sign-btn{display:inline-block;background:linear-gradient(135deg,var(--green-deep),var(--green-mid));color:#fff;padding:0.85rem 2.2rem;border-radius:var(--radius);font-size:0.88rem;font-weight:600;text-decoration:none;letter-spacing:0.03em;transition:all var(--transition);box-shadow:0 4px 14px rgba(29,84,67,0.18)}.sign-btn:hover{opacity:0.9;color:#fff;transform:translateY(-1px)}
+footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;text-align:center}
+.footer-links{display:flex;justify-content:center;gap:1.75rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;transition:color var(--transition)}.footer-links a:hover{color:var(--gold)}
+.footer-email{margin-bottom:1.5rem}.footer-email a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.85rem}.footer-email a:hover{color:var(--gold)}
+.footer-copy{font-size:0.72rem;color:rgba(255,255,255,0.35)}
+@media(max-width:600px){.content{padding:3rem 1.25rem}.hero{padding:4rem 1.25rem 3rem}.hero-meta{gap:1.5rem}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-brand" href="https://thetranquillity.co.uk/norway-retreat/">The Tranquillity</a>
+  <div class="nav-links">
+    <a href="index.html">&larr; Welcome Portal</a>
+    <a href="principles.html">Our Principles</a>
+  </div>
+</nav>
+<section class="hero">
+  <p class="hero-eyebrow">The Tranquillity Retreats</p>
+  <h1>User Agreement</h1>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><span class="label">Retreat</span><span class="value">Norway 2026</span></div>
+    <div class="hero-meta-item"><span class="label">Dates</span><span class="value">5 &ndash; 9 October 2026</span></div>
+    <div class="hero-meta-item"><span class="label">Venue</span><span class="value">Panorama Hotel &amp; Resort</span></div>
+  </div>
+  <p class="hero-note">Thank you for saying yes to this journey. Your decision to be here is the first step in a process of remembering, not becoming someone new, but coming home to who you have always been. This agreement exists not to create distance between us, but to deepen trust. Please read it in the spirit in which it is written: with warmth, with honesty, and with deep respect for the journey you are about to take.</p>
+  <div class="hero-divider"></div>
+</section>
+<div class="content">
+
+  <div class="section">
+    <p class="section-number">1</p>
+    <h2>Who This Agreement Is Between</h2>
+    <p>This agreement is made between The Tranquillity Retreats (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our&rdquo;) and you, the participant who has registered for the Norway 2026 Retreat (the &ldquo;Retreat&rdquo;).</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">2</p>
+    <h2>About the Retreat Experience</h2>
+    <p>The Retreat takes place from 5 to 9 October 2026 at Panorama Hotel &amp; Resort, Steinsland, Norway.</p>
+    <p>The Tranquillity Retreat is a five-day immersion into inner exploration, drawing from mystery school teachings, breathwork, sound healing, energy work, and consciousness expansion practices. This is not a wellness holiday or a surface-level relaxation experience. It is a deliberate journey through layers of self-discovery, ancestral connection, and expanded awareness.</p>
+    <p>The teachings offered draw from mystery school traditions, new age and metaphysical philosophy, and advanced practices of consciousness expansion, including material that may challenge conventional beliefs and invite profound personal reflection. This retreat is best suited for individuals with an open mind toward spiritual and new age information. If you feel called to explore expanded consciousness and soul-level understanding, you are exactly where you need to be.</p>
+    <p>Our facilitation team creates a safe, held space for this work. Every session is designed with intention, pacing, and integration in mind. The Retreat may include, but is not limited to, guided breathwork and breathing exercises, sound healing and gong ceremonies, fire ceremony, meditation, visualisation and somatic practices, movement and embodied practices, group workshops and reflective sessions, a Norway excursion in nature, and community sharing in sacred space. The specific programme may evolve to honour what the group needs. We will always be transparent with you about any changes.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">3</p>
+    <h2>What You May Experience</h2>
+    <p>During the Retreat, it is completely natural to notice a range of physical, emotional, and energetic responses, including emotional releases such as tears, laughter, or the surfacing of old memories; physical sensations such as tingling, warmth, or involuntary movement; deep states of relaxation or heightened awareness; vivid inner imagery or moments of profound clarity; and temporary fatigue or heightened energy following sessions. These responses are a natural part of the process. Our facilitation team is trained to support you through them. You are never alone in this.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">4</p>
+    <h2>Your Rights During the Retreat</h2>
+    <p>You may step out of any session at any time, for any reason. Simply stand and leave quietly and a facilitator will check on you. You are always encouraged to communicate with the facilitation team if anything feels uncomfortable or overwhelming. Integration sessions are built into the schedule to help you process and ground what surfaces.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">5</p>
+    <h2>Our Shared Agreement</h2>
+    <div class="principles-ref">The values in this section are rooted in <a href="principles.html">The Tranquillity Principles</a>. We invite you to read them in full before signing.</div>
+    <p>A retreat of this nature is a co-creation. What we build together depends on every person in the room honouring the space. In joining us, you agree to treat all participants, facilitators, and supporting team with care and consideration throughout the Retreat. Behaviour that is harmful, discriminatory, or disruptive to others will not be tolerated and may result in your being asked to leave without a refund.</p>
+    <p>You are the authority on your own experience. You agree to take ownership of your physical, emotional, and mental wellbeing, to be truthful with us regarding your health and history, and to communicate honestly if anything changes. What is shared by participants during sessions remains within the group. You agree not to share the personal disclosures, stories, or experiences of other participants outside of the Retreat space without their explicit consent.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">6</p>
+    <h2>Your Health and Wellbeing</h2>
+    <div class="principles-ref">Taking full ownership of your experience is at the heart of <a href="principles.html#sovereignty">Principle VI: Sovereignty</a>. Your commitment to honesty in this section is an expression of that principle.</div>
+    <p>Your safety is our deepest priority. The practices we offer, including breathwork, ceremonial work, and deep meditative states, can create profound shifts physically, emotionally, and energetically. These experiences are by design, and they are held with care.</p>
+    <p>The facilitators of The Tranquillity are not licensed medical or mental health professionals. This Retreat is a wellness and personal development experience. It is not a substitute for professional medical or psychological care. If you are currently taking prescribed medication, please continue to do so as directed by your healthcare provider.</p>
+    <p>We ask that you complete the Brief History form honestly and in full. This is a separate form sent alongside this agreement. It allows our facilitation team to understand your history and ensure that every practice offered is appropriate for you. By signing this agreement, you confirm that you have disclosed all relevant medical, psychiatric, and physical health information in your Brief History form; that you have consulted a qualified medical professional if you have any concerns about your ability to participate safely; and that you accept personal responsibility for your wellbeing in relation to the practices offered. If your circumstances change after submitting your Brief History form, please contact us at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a> before the Retreat begins.</p>
+    <p>In the event of injury or illness during the Retreat, you consent to emergency medical assistance being sought on your behalf. You acknowledge that you are solely responsible for any associated costs, and that The Tranquillity makes no representations about the availability or outcome of any such treatment.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">7</p>
+    <h2>Release, Waiver and Indemnity</h2>
+    <p>Transformational work, by its nature, involves stepping into the unknown. Growth and deep inner work can sometimes bring up emotions, memories, or physical sensations that feel intense or unexpected. This is a natural part of the process and will be held and supported by your facilitation team throughout.</p>
+    <p>By choosing to attend, you hereby release, hold harmless, and indemnify The Tranquillity Retreats and its officers, directors, facilitators, employees, contractors, volunteers, agents, administrators, successors, and assigns (collectively the &ldquo;Released Parties&rdquo;) from any and all claims, damages, losses, and liabilities arising out of or in connection with your participation in the Retreat, including travel to and from Norway, to the fullest extent permitted by law in England and Wales. This release includes, but is not limited to, personal injury, illness, loss or damage to personal property, and any cause of action related to the premises or the activities offered.</p>
+    <p>The Tranquillity Retreats is not responsible for any loss, theft, or damage to personal belongings before, during, or after the Retreat. We encourage you to take appropriate care of your personal property throughout.</p>
+    <p>We have designed every element of this Retreat with your safety and dignity in mind. This clause exists not to distance us from responsibility, but to reflect the shared nature of the journey we are undertaking together.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">8</p>
+    <h2>Financial Arrangements</h2>
+    <h3>8.1 Booking Fee and Payments</h3>
+    <p>A non-refundable booking fee of &pound;100 is required to secure your place. This fee is non-transferable and will be deducted from your total balance. To qualify for Early Bird pricing (&pound;1,222), the full balance must be paid by 10 May 2026. For regular pricing, the final balance is due by 1 September 2026.</p>
+    <h3>8.2 Cancellation and Refund Policy</h3>
+    <p>In accordance with our <a href="https://thetranquillity.co.uk/term-condition-norway-retreat/" target="_blank" rel="noopener">Terms &amp; Conditions</a>, all payments made (including the booking fee and subsequent instalments) are strictly non-refundable. There are no exceptions for personal circumstances, illness, or travel disruptions. We strongly require all participants to hold comprehensive travel insurance to protect against unforeseen events. Bookings are made exclusively for the named participant; credits cannot be transferred to another person or converted into other sessions, products, or services offered by The Tranquillity.</p>
+    <h3>8.3 Cancellation by Us</h3>
+    <p>If the Retreat is cancelled by the organisers, you will receive a full refund of all amounts paid (excluding the booking fee) within 28 days. We are not liable for third-party costs such as flights.</p>
+    <h3>8.4 Non-Transferability</h3>
+    <p>All bookings are personal to the participant. We do not permit the transfer of places to third parties under any circumstances, nor can balances be applied as credit toward future retreats or private sessions.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">9</p>
+    <h2>Travel and Documentation</h2>
+    <p>You are responsible for ensuring that your travel documentation is valid and complete, including your passport, any applicable visa requirements, and any health or entry requirements for Norway. The Tranquillity Retreats is not liable for any costs or consequences arising from insufficient or invalid documentation. We strongly recommend holding travel insurance that covers the full duration of your trip, including international medical expenses and emergency repatriation.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">10</p>
+    <h2>Capturing the Journey Together</h2>
+    <div class="principles-ref">Documenting and sharing the spirit of this work is one of The Tranquillity&rsquo;s core principles. You can read more in <a href="principles.html#vehicles-of-change">Principle IX: We Are Vehicles of Change</a>.</div>
+    <p>At The Tranquillity, we document our retreats with love and intentionality. Photographs and short videos are taken throughout our time together to honour the journey and share its spirit with the wider community. Documentation is woven into the fabric of the experience, not separate from it.</p>
+    <p>For any content that is both clearly identifiable and reflects the depth of personal experience inherent in this work, we will always reach out to you personally before publishing.</p>
+    <p>We also ask that all participants extend this same care to one another. Please do not photograph or film fellow participants during sessions or ceremonies, and always ask before sharing images of others on social media. Please do not use any Retreat content for commercial purposes.</p>
+    <p>Content already published in good faith prior to any request cannot be recalled or removed. If your preference changes at any point during the Retreat, simply let a facilitator know. Raw media is retained for 60 months, after which it is securely deleted unless it has been published with prior consent.</p>
+    <p>If you would prefer not to be included in Retreat photography, please let us know on arrival and our team will provide you with a discreet visual identifier so every member of our documentation team knows to keep you out of frame.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">11</p>
+    <h2>Our Teachings and Intellectual Property</h2>
+    <p>The practices, frameworks, and teachings offered during the Retreat are the intellectual property of The Tranquillity Retreats and its facilitators. You are welcome to carry what you learn into your own life and personal practice. We ask that you do not reproduce, teach, or commercially use these frameworks without our written permission.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">12</p>
+    <h2>The Legal Foundation</h2>
+    <h3>12.1 Governing Law</h3>
+    <p>This agreement is governed by the laws of England and Wales. Any disputes arising from this agreement shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+    <h3>12.2 Severability</h3>
+    <p>If any part of this agreement is found to be unenforceable, the remaining sections continue to apply in full.</p>
+    <h3>12.3 Entire Agreement</h3>
+    <p>This agreement, together with your Brief History form and any written communications from The Tranquillity Retreats, constitutes the full agreement between us. In the event of a conflict between this summary and the full <a href="https://thetranquillity.co.uk/term-condition-norway-retreat/" target="_blank" rel="noopener">Terms &amp; Conditions</a>, the website Terms &amp; Conditions shall take precedence. All bookings are final; this agreement is non-transferable and cannot be exchanged for other services.</p>
+    <h3>12.4 Electronic Acceptance</h3>
+    <p>This agreement may be accepted electronically. Your digital signature or confirmation carries the same legal weight as a handwritten signature.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-number">13</p>
+    <h2>Ready to Sign?</h2>
+    <p>This document is provided for your reference. Once you have read it in full, please complete the User Agreement form using the link below. Your submission confirms your understanding of and agreement to everything set out here.</p>
+    <p style="margin-top:1.5rem;"><a class="sign-btn" href="https://forms.gle/H2WophjVLuVWpuG87" target="_blank" rel="noopener">Complete the User Agreement Form &rarr;</a></p>
+  </div>
+
+</div>
+<footer>
+  <div class="footer-links">
+    <a href="https://thetranquillity.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+    <a href="https://thetranquillity.co.uk/term-condition-norway-retreat/" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+    <a href="user-agreement.html">User Agreement</a>
+    <a href="principles.html">Our Principles</a>
+  </div>
+  <div class="footer-email"><a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a></div>
+  <div class="footer-copy">&copy; 2026 The Tranquillity Retreats. All rights reserved.</div>
+</footer>
+</body>
+</html>

@@ -24,7 +24,7 @@
     a{color:var(--green-deep);transition:var(--transition)}a:hover{color:var(--accent)}
     .site-header{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 clamp(1rem,5vw,3rem)}
     .header-inner{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
-    .brand-name{font-family:var(--font-serif);font-size:1.3rem;font-weight:700;color:var(--text-primary);letter-spacing:0.03em;text-decoration:none}
+    .brand-name{font-family:var(--font-serif);font-size:1.3rem;font-weight:700;color:var(--text-primary);letter-spacing:0.03em;text-decoration:none;transition:var(--transition)}.brand-name:hover{color:var(--accent)}
     .back-link{display:inline-flex;align-items:center;gap:0.45rem;font-size:0.8rem;color:var(--text-secondary);text-decoration:none;letter-spacing:0.03em;transition:var(--transition);padding:6px 0}.back-link:hover{color:var(--accent)}
     .hero-band{background:var(--bg-warm);border-bottom:1px solid var(--border);padding:clamp(2.5rem,6vw,4rem) clamp(1rem,5vw,3rem);text-align:center}
     .doc-badge{display:inline-block;font-family:var(--font-sans);font-size:0.68rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);background:var(--highlight-strong);border:1px solid rgba(201,185,154,0.2);border-radius:100px;padding:4px 14px;margin-bottom:1.5rem}
@@ -71,8 +71,8 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <span class="brand-name">The Tranquillity</span>
-      <a href="https://2026-norway-retreat-welcome-portal.pages.dev/" class="back-link">
+      <a href="https://thetranquillity.co.uk/norway-retreat/" class="brand-name">The Tranquillity</a>
+      <a href="index.html" class="back-link">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M9 11L5 7L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Back to Welcome Portal
       </a>
@@ -117,10 +117,7 @@
 
     <div class="doc-section" id="s1">
       <div class="section-label">Section 1</div>
-      <div class="section-number-title">
-        <span class="section-num">1</span>
-        <h2 class="section-title">Definitions</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">1</span><h2 class="section-title">Definitions</h2></div>
       <p class="section-subtitle">Content Categories</p>
       <div class="section-body">
         <p>Two types of content may be captured during the retreat.</p>
@@ -132,10 +129,7 @@
 
     <div class="doc-section" id="s2">
       <div class="section-label">Section 2</div>
-      <div class="section-number-title">
-        <span class="section-num">2</span>
-        <h2 class="section-title">Consent to Atmosphere Content</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">2</span><h2 class="section-title">Consent to Atmosphere Content</h2></div>
       <p class="section-subtitle">General Retreat Coverage</p>
       <div class="section-body">
         <p>If you selected <strong>Yes</strong> in the onboarding form, you are giving The Tranquillity permission to capture, use, and publish Atmosphere Content that may include your likeness. This may be used across our website, social media, YouTube, and other materials &mdash; to share the spirit of what we do with those who have not yet found us, and to honour the journey of those who have.</p>
@@ -144,10 +138,7 @@
 
     <div class="doc-section" id="s3">
       <div class="section-label">Section 3</div>
-      <div class="section-number-title">
-        <span class="section-num">3</span>
-        <h2 class="section-title">Session Content Restrictions</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">3</span><h2 class="section-title">Session Content Restrictions</h2></div>
       <p class="section-subtitle">Protecting Vulnerable Moments</p>
       <div class="section-body">
         <p>Wide-angle or non-identifiable footage from sessions may be used as Atmosphere Content under the general consent above. Any footage that shows you in a deeply personal or emotionally open moment is held to a different and higher standard.</p>
@@ -157,10 +148,7 @@
     </div>
 
     <div class="highlight-card">
-      <div class="hc-label">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M7 4.5V7.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="7" cy="9.5" r="0.6" fill="currentColor"/></svg>
-        Universal Protection
-      </div>
+      <div class="hc-label"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M7 4.5V7.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="7" cy="9.5" r="0.6" fill="currentColor"/></svg>Universal Protection</div>
       <h3>Your vulnerability is sacred.</h3>
       <p>There is no version of this retreat where a moment of real tenderness, release, or breakthrough is used without you knowing about it first and saying yes. If we feel something truly special has been captured and you are in it, we will come to you personally &mdash; not through a form, but as a team reaching out to a person. We will share exactly what we have, ask if you are happy for it to be used, and honour your answer completely.</p>
       <p class="sacred-line">That is a promise we make to everyone who walks through the door.</p>
@@ -170,10 +158,7 @@
 
     <div class="doc-section" id="s4">
       <div class="section-label">Section 4</div>
-      <div class="section-number-title">
-        <span class="section-num">4</span>
-        <h2 class="section-title">Right to Opt Out of Specific Captures</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">4</span><h2 class="section-title">Right to Opt Out of Specific Captures</h2></div>
       <p class="section-subtitle">Your Boundaries in the Moment</p>
       <div class="section-body">
         <p>If at any point during the retreat you would prefer not to be filmed or photographed in a specific session, simply let a facilitator know before it begins. We will do everything we reasonably can to honour that. This does not affect your general consent for Atmosphere Content, and you will never need to explain yourself.</p>
@@ -182,10 +167,7 @@
 
     <div class="doc-section" id="s5">
       <div class="section-label">Section 5</div>
-      <div class="section-number-title">
-        <span class="section-num">5</span>
-        <h2 class="section-title">Participant-Captured Media</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">5</span><h2 class="section-title">Participant-Captured Media</h2></div>
       <p class="section-subtitle">Your Own Photographs and Videos</p>
       <div class="section-body">
         <p>You are very welcome to take your own photographs and videos during free time, meals, and social moments throughout the retreat. During facilitated sessions &mdash; breathwork, ceremony, meditation, and workshops &mdash; please keep your phone away unless a facilitator has specifically invited otherwise. This protects the space for everyone in it, including you.</p>
@@ -194,10 +176,7 @@
 
     <div class="doc-section" id="s6">
       <div class="section-label">Section 6</div>
-      <div class="section-number-title">
-        <span class="section-num">6</span>
-        <h2 class="section-title">Social Media and Tagging</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">6</span><h2 class="section-title">Social Media and Tagging</h2></div>
       <p class="section-subtitle">How We Reference You Online</p>
       <div class="section-body">
         <p>We will never tag you individually in a social media post without asking you first. Group photographs shared online will not include individual name tags unless every person shown has confirmed they are happy with that. If you would like to be tagged, simply let us know and we will always be glad to.</p>
@@ -206,10 +185,7 @@
 
     <div class="doc-section" id="s7">
       <div class="section-label">Section 7</div>
-      <div class="section-number-title">
-        <span class="section-num">7</span>
-        <h2 class="section-title">Testimonials</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">7</span><h2 class="section-title">Testimonials</h2></div>
       <p class="section-subtitle">Sharing Your Experience</p>
       <div class="section-body">
         <p>Your onboarding form invited you to share your preferences around testimonials. This section explains how that process actually works so that you know exactly what to expect.</p>
@@ -222,10 +198,7 @@
 
     <div class="doc-section" id="s8">
       <div class="section-label">Section 8</div>
-      <div class="section-number-title">
-        <span class="section-num">8</span>
-        <h2 class="section-title">Third-Party Sharing</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">8</span><h2 class="section-title">Third-Party Sharing</h2></div>
       <p class="section-subtitle">Who Has Access to Your Image</p>
       <div class="section-body">
         <p>Media captured during the retreat will never be sold, licensed, or shared with any outside party. The only exception is professional editors and production personnel working directly under contract with The Tranquillity, solely for the purpose of producing retreat content. Your image belongs to this space and this community.</p>
@@ -234,10 +207,7 @@
 
     <div class="doc-section" id="s9">
       <div class="section-label">Section 9</div>
-      <div class="section-number-title">
-        <span class="section-num">9</span>
-        <h2 class="section-title">Raw Media Retention</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">9</span><h2 class="section-title">Raw Media Retention</h2></div>
       <p class="section-subtitle">How Long We Keep Unedited Footage</p>
       <div class="section-body">
         <p>Unedited footage and photographs are kept for a maximum of 60 months from the date of the retreat. After that period, anything not incorporated into published materials is permanently deleted. Published materials may remain in use indefinitely under the terms of this consent.</p>
@@ -246,10 +216,7 @@
 
     <div class="doc-section" id="s10">
       <div class="section-label">Section 10</div>
-      <div class="section-number-title">
-        <span class="section-num">10</span>
-        <h2 class="section-title">Revocation of Consent</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">10</span><h2 class="section-title">Revocation of Consent</h2></div>
       <p class="section-subtitle">Withdrawing Your Approval</p>
       <div class="section-body">
         <p>You may withdraw your consent to future use of your likeness at any time by writing to us at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a>. Withdrawal applies to future use only. Content already published before we receive your request cannot be recalled, as it was shared in good faith under your original consent. We will always act on a withdrawal notice promptly and with care.</p>
@@ -258,10 +225,7 @@
 
     <div class="doc-section" id="s11">
       <div class="section-label">Section 11</div>
-      <div class="section-number-title">
-        <span class="section-num">11</span>
-        <h2 class="section-title">No Compensation</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">11</span><h2 class="section-title">No Compensation</h2></div>
       <p class="section-subtitle">Use of Likeness</p>
       <div class="section-body">
         <p>There is no financial payment for use of your likeness under this consent. The retreat experience and everything it holds is the full consideration.</p>
@@ -270,10 +234,7 @@
 
     <div class="doc-section" id="s12">
       <div class="section-label">Section 12</div>
-      <div class="section-number-title">
-        <span class="section-num">12</span>
-        <h2 class="section-title">Governing Law</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">12</span><h2 class="section-title">Governing Law</h2></div>
       <p class="section-subtitle">Jurisdiction</p>
       <div class="section-body">
         <p>This consent is governed by the laws of England and Wales. Any disputes arising from it fall within the exclusive jurisdiction of the courts of England and Wales.</p>
@@ -282,10 +243,7 @@
 
     <div class="doc-section" id="s13">
       <div class="section-label">Section 13</div>
-      <div class="section-number-title">
-        <span class="section-num">13</span>
-        <h2 class="section-title">Modifications</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">13</span><h2 class="section-title">Modifications</h2></div>
       <p class="section-subtitle">Changes to This Document</p>
       <div class="section-body">
         <p>If we need to update this document before the retreat begins, we will let you know directly. If you are not comfortable with any change, you are free to withdraw your consent at any time.</p>
@@ -294,10 +252,7 @@
 
     <div class="doc-section" id="s14">
       <div class="section-label">Section 14</div>
-      <div class="section-number-title">
-        <span class="section-num">14</span>
-        <h2 class="section-title">Contact</h2>
-      </div>
+      <div class="section-number-title"><span class="section-num">14</span><h2 class="section-title">Contact</h2></div>
       <p class="section-subtitle">Questions and Conversations</p>
       <div class="section-body">
         <p>If anything here raises a question, or if you would like to talk through any aspect of how media works during the retreat, please reach out to us at <a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a>. We are always happy to have that conversation.</p>
