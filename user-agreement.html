@@ -15,7 +15,7 @@
 --card-shadow:0 2px 12px rgba(0,0,0,0.04);
 --glass-border:rgba(29,84,67,0.08);
 --text:#1a1a2e;--text-body:#3a3a4e;--text-muted:#6a6a7e;
---green-deep:#1d5443;--green-mid:#267a5e;
+--green-deep:#1d5443;--green-mid:#267a5e;--green-soft:rgba(29,84,67,0.06);
 --gold:#c9a96e;--gold-border:rgba(201,169,110,0.25);
 --serif:'Cormorant Garamond',Georgia,serif;--sans:'Libre Franklin',system-ui,sans-serif;
 --radius:8px;--radius-lg:12px;--max-w:760px;--transition:250ms cubic-bezier(0.4,0,0.2,1)
@@ -25,11 +25,18 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text-body);font-si
 h1,h2,h3,h4{font-family:var(--serif);color:var(--text);font-weight:700;line-height:1.2}
 a{color:var(--green-deep);transition:color var(--transition)}a:hover{color:var(--gold)}
 nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);padding:0.85rem 2rem;display:flex;align-items:center;justify-content:space-between}
-.nav-brand{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:0.03em;transition:color var(--transition)}.nav-brand:hover{color:var(--gold)}
+.nav-brand{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:0.03em;white-space:nowrap;transition:color var(--transition)}.nav-brand:hover{color:var(--gold)}
 .nav-links{display:flex;gap:1.75rem;align-items:center}
 .nav-links a{font-size:0.75rem;font-weight:500;color:var(--text-muted);text-decoration:none;text-transform:uppercase;letter-spacing:0.12em;transition:color var(--transition)}.nav-links a:hover{color:var(--green-deep)}
-.hero{text-align:center;padding:6rem 2rem 4rem;background:linear-gradient(180deg,#f3ede4 0%,#faf7f2 100%);position:relative;overflow:hidden}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--text-muted);transition:color var(--transition)}.nav-toggle:hover{color:var(--green-deep)}.nav-toggle svg{display:block}
+@media(max-width:680px){
+nav{padding:0.85rem 1.25rem}.nav-toggle{display:flex;align-items:center;justify-content:center}
+.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(250,247,242,0.98);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);flex-direction:column;gap:0;padding:0.5rem 0;box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+.nav-links.open{display:flex}.nav-links a{padding:1rem 1.5rem;font-size:0.8rem;letter-spacing:0.1em;width:100%;border-bottom:1px solid rgba(29,84,67,0.05);color:var(--text-body)}.nav-links a:last-child{border-bottom:none}.nav-links a:hover{color:var(--green-deep);background:var(--green-soft)}
+}
+.hero{text-align:center;padding:5rem 2rem 4rem;background:linear-gradient(180deg,#f3ede4 0%,#faf7f2 100%);position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 80%,rgba(201,169,110,0.06) 0%,transparent 50%),radial-gradient(circle at 70% 20%,rgba(29,84,67,0.04) 0%,transparent 50%);pointer-events:none}
+.hero-logo{width:200px;max-width:60%;margin:0 auto 2rem;display:block;position:relative}
 .hero-eyebrow{font-family:var(--sans);font-size:0.72rem;font-weight:500;text-transform:uppercase;letter-spacing:0.25em;color:var(--gold);margin-bottom:1.5rem}
 .hero h1{font-size:clamp(2.4rem,6vw,3.4rem);font-weight:700;color:var(--text);margin-bottom:1.5rem}
 .hero-meta{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;margin-bottom:2rem}
@@ -55,18 +62,20 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;tex
 .footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;transition:color var(--transition)}.footer-links a:hover{color:var(--gold)}
 .footer-email{margin-bottom:1.5rem}.footer-email a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.85rem}.footer-email a:hover{color:var(--gold)}
 .footer-copy{font-size:0.72rem;color:rgba(255,255,255,0.35)}
-@media(max-width:600px){.content{padding:3rem 1.25rem}.hero{padding:4rem 1.25rem 3rem}.hero-meta{gap:1.5rem}}
+@media(max-width:600px){.content{padding:3rem 1.25rem}.hero{padding:3.5rem 1.25rem 3rem}.hero-meta{gap:1.5rem}}
 </style>
 </head>
 <body>
 <nav>
   <a class="nav-brand" href="https://thetranquillity.co.uk/norway-retreat/">The Tranquillity</a>
-  <div class="nav-links">
-    <a href="index.html">&larr; Welcome Portal</a>
-    <a href="principles.html">Our Principles</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><line x1="3" y1="6" x2="19" y2="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="3" y1="11" x2="19" y2="11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="3" y1="16" x2="19" y2="16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" onclick="closeNav()">&larr; Welcome Portal</a>
+    <a href="principles.html" onclick="closeNav()">Our Principles</a>
   </div>
 </nav>
 <section class="hero">
+  <img class="hero-logo" src="assets/images/tranquillity_logo.png" alt="The Tranquillity Retreats">
   <p class="hero-eyebrow">The Tranquillity Retreats</p>
   <h1>User Agreement</h1>
   <div class="hero-meta">
@@ -200,5 +209,10 @@ footer{background:var(--text);color:rgba(255,255,255,0.55);padding:3rem 2rem;tex
   <div class="footer-email"><a href="mailto:retreats@thetranquillity.co.uk">retreats@thetranquillity.co.uk</a></div>
   <div class="footer-copy">&copy; 2026 The Tranquillity Retreats. All rights reserved.</div>
 </footer>
+<script>
+function closeNav(){var l=document.getElementById('navLinks');var t=document.getElementById('navToggle');l.classList.remove('open');t.setAttribute('aria-expanded','false');}
+document.getElementById('navToggle').addEventListener('click',function(){var l=document.getElementById('navLinks');var open=l.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false');});
+document.addEventListener('click',function(e){var nav=document.querySelector('nav');if(!nav.contains(e.target)){closeNav();}});
+</script>
 </body>
 </html>
